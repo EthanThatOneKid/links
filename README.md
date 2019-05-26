@@ -9,6 +9,8 @@
 * [Game Development](programming/game-development)
 * [CSS](programming/css)
 * [Retro](programming/retro)
+* [Tutorials](programming/tutorials)
+* [Environment](programming/environment)
 
 ### Videogames
 * [Pokemon](videogames/pokemon)
