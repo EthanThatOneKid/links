@@ -1,4 +1,4 @@
-# Tutorials
+# 📝 Tutorials
 
-## YouTubers
-* [The Coding Train (Dan Shiffman)]()
+## ▶ YouTubers
+* [The Coding Train (Dan Shiffman)](https://thecodingtrain.com/)
