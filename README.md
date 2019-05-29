@@ -11,9 +11,10 @@
 * [Retro](programming/retro)
 * [Tutorials](programming/tutorials)
 * [Environment](programming/environment)
-* [Libraries](programming/libraries)
+* [JavaScript Libraries](programming/javascript-libraries)
 
 ### Videogames
 * [Pokemon](videogames/pokemon)
 * [Mario](videogames/mario)
+* [Neopets](videogames/neopets)
 * [Web](videogames/web)
