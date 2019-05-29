@@ -11,6 +11,7 @@
 * [Retro](programming/retro)
 * [Tutorials](programming/tutorials)
 * [Environment](programming/environment)
+* [Libraries](programming/libraries)
 
 ### Videogames
 * [Pokemon](videogames/pokemon)
