@@ -1,0 +1,187 @@
+{
+  "Programming": {
+    "icon": "💻",
+    "children": {
+      "Data Science": {
+        "icon": "🔢",
+        "children": {
+          "NASA (National Aeronautics and Space Administration)": {
+            "icon": "🚀",
+            "children": {
+              "GitHub": {
+                "href": "https://github.com/nasa/"
+              },
+              "Goddard Institute": {
+                "href": "https://data.giss.nasa.gov/"
+              },
+              "NASA API": {
+                "href": "https://api.nasa.gov/"
+              },
+              "Browse NASA Datasets": {
+                "href": "https://data.nasa.gov/browse"
+              },
+              "code.nasa.gov": {
+                "href": "https://code.nasa.gov"
+              }
+            }
+          },
+          "GSA (US General Services Administration)": {
+            "icon": "🌎",
+            "children": {
+              "GitHub": {
+                "href": "https://github.com/GSA/"
+              },
+              "Datasets": {
+                "href": "https://www.data.gov/"
+              }
+            }
+          },
+          "Miscellaneous Datasets": {
+            "xkcd Colors": {
+              "href": "https://xkcd.com/color/rgb/"
+            },
+            "Security Testing": {
+              "href": "https://github.com/danielmiessler/SecLists"
+            },
+            "Text Files": {
+              "href": "http://textfiles.com/"
+            }
+          }
+        }
+      },
+      "Playgrounds": {
+        "icon": "🎈",
+        "children": {
+          "Interview Practice": {
+            "icon": "🕴",
+            "children": {
+              "CodeSignal": {
+                "href": "https://codesignal.com/"
+              },
+              "LeetCode": {
+                "href": "https://leetcode.com/"
+              },
+              "AlgoExpert": {
+                "href": "https://www.algoexpert.io/product"
+              },
+              "CodingBat": {
+                "href": "https://codingbat.com/python"
+              }
+            }
+          },
+          "JavaScript": {
+            "icon": "💛",
+            "children": {
+              "Khan Academy": {
+                "href": "https://www.khanacademy.org/computer-programming/new/pjs"
+              },
+              "CodePen": {
+                "href": "https://codepen.io/"
+              },
+              "p5js Editor": {
+                "href": "https://editor.p5js.org/"
+              }
+            }
+          },
+          "Miscellaneous": {
+            "icon": "🧠",
+            "children": {
+              "NativeScript": {
+                "href": "https://play.nativescript.org/"
+              },
+              "TypeScript": {
+                "href": "https://www.typescriptlang.org/play/"
+              },
+              "GoLang": {
+                "href": "https://play.golang.org/"
+              },
+              "RegEx": {
+                "href": "https://regex101.com/"
+              }
+            }
+          }
+        }
+      },
+      "Web Frameworks": {
+        "icon": "🕸",
+        "children": {
+          "JavaScript": {
+            "icon": "💛",
+            "children": {
+              "React": {
+                "href": "https://reactjs.org/"
+              },
+              "Svelte": {
+                "href": "https://svelte.dev/"
+              },
+              "Hybrids": {
+                "href": "https://github.com/hybridsjs/hybrids"
+              }
+            }
+          },
+          "Python": {
+            "icon": "🐍",
+            "children": {
+              "Flask": {
+                "href": "https://www.fullstackpython.com/flask.html"
+              },
+              "Django": {
+                "href": "https://www.fullstackpython.com/django.html"
+              }
+            }
+          },
+          "GoLang": {
+            "icon": "🐐",
+            "children": {
+              "Revel": {
+                "href": "https://revel.github.io"
+              },
+              "Native HTTP": {
+                "href": "https://golang.org/doc/articles/wiki/"
+              }
+            }
+          },
+          "Cloud Computing": {
+            "icon": "☁",
+            "children": {
+              "Heroku": {
+                "href": "https://heroku.com/"
+              },
+              "Digital Ocean": {
+                "href": "https://www.digitalocean.com/"
+              }
+            }
+          },
+          "Databases": {
+            "icon": "💾",
+            "children": {
+              "Firebase": {
+                "href": "https://firebase.google.com/"
+              },
+              "MongoDB": {
+                "href": "https://www.mongodb.com/"
+              },
+              "Restify": {
+                "href": "https://github.com/restify/node-restify"
+              }
+            }
+          },
+          "CSS Libraries": {
+            "icon": "🔮",
+            "children": {
+              "Bulma": {
+                "href": "https://bulma.io/"
+              },
+              "Material Design Lite": {
+                "href": "https://github.com/google/material-design-lite"
+              },
+              "NES.css": {
+                "href": "https://github.com/nostalgic-css/NES.css"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

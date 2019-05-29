@@ -15,7 +15,3 @@
 * [XKCD Colors](https://xkcd.com/color/rgb/)
 * [Security Testing](https://github.com/danielmiessler/SecLists)
 * [Text Files](http://textfiles.com/)
-
-## 📚 Libraries
-* [D3](https://d3js.org/)
-* [Chart.js](https://www.chartjs.org/)

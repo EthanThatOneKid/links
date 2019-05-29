@@ -20,6 +20,8 @@
 * [skale](https://github.com/skale-me/skale) High performance distributed data processing engine
 * [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) Graph theory (network) library for visualisation and analysis
 * [sigma.js](https://github.com/jacomyal/sigma.js) A JavaScript library dedicated to graph drawing
+* [D3](https://d3js.org/)
+* [Chart.js](https://www.chartjs.org/)
 
 ## 💰 Finance
 * [bitcoinJS](https://github.com/bitcoinjs/bitcoinjs-lib) A javascript Bitcoin library for node.js and browsers.
