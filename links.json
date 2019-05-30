@@ -181,6 +181,209 @@
             }
           }
         }
+      },
+      "Game Development": {
+        "icon": "🎮",
+        "children": {
+          "Assets": {
+            "icon": "🏭",
+            "children": {
+              "Open Game Art": {
+                "href": "https://opengameart.org/"
+              },
+              "Pogo Assets": {
+                "href": "https://github.com/ZeChrales/PogoAssets"
+              }
+            }
+          },
+          "Engines": {
+            "icon": "🚂",
+            "children": {
+              "Unity": {
+                "href": "https://unity.com/"
+              },
+              "Unreal": {
+                "href": "https://www.unrealengine.com/en-US/"
+              },
+              "GoDot": {
+                "href": "https://godotengine.org/"
+              },
+              "GB Studio": {
+                "href": "https://github.com/chrismaltby/gb-studio"
+              }
+            }
+          }
+        }
+      },
+      "Retro": {
+        "icon": "🕹",
+        "children": {
+          "QBasic": {
+            "icon": "🔷",
+            "children": {
+              "QB64": {
+                "href": "https://www.portal.qb64.org/"
+              },
+              "QBasic Games": {
+                "href": "http://games.phatcode.net/"
+              },
+              "Pete's QBasic Games": {
+                "href": "http://www.petesqbsite.com/downloads/downloads.shtml"
+              },
+              "QuickBasic Cafe": {
+                "href": "https://www.qbasic.net/en/qbasic-downloads/games/action-1.htm"
+              }
+            }
+          },
+          "Spectrum": {
+            "icon": "🔦",
+            "children": {
+              "ZX Spin": {
+                "href": "https://www.zophar.net/sinclair/zx-spin.html"
+              },
+              "Spectrum Games": {
+                "href": "http://www.worldofspectrum.org/archive.html"
+              }
+            }
+          },
+          "Community": {
+            "icon": "👬",
+            "children": {
+              "World of Spectrum": {
+                "href": "http://www.worldofspectrum.org/"
+              }
+            }
+          }
+        }
+      },
+      "Environment": {
+        "icon": "",
+        "children": {
+          "Desktop Apps": {
+            "icon": "💻",
+            "children": {
+              "GitHub Desktop": {
+                "href": "https://desktop.github.com/"
+              },
+              "Postman": {
+                "href": "https://www.getpostman.com/"
+              }
+            }
+          },
+          "Languages": {
+            "icon": "👅",
+            "children": {
+              "Node": {
+                "href": "https://nodejs.org/en/"
+              },
+              "Python": {
+                "href": "https://www.python.org/"
+              },
+              "GoLang": {
+                "href": "https://golang.org/"
+              }
+            }
+          },
+          "Text Editors": {
+            "icon": "🎹",
+            "children": {
+              "Visual Studio Code": {
+                "href": "https://code.visualstudio.com/"
+              },
+              "Atom": {
+                "href": "https://atom.io/"
+              }
+            }
+          }
+        }
+      },
+      "JavaScript Libraries": {
+        "icon": "💛📚",
+        "children": {
+          "Visual": {
+            "icon": "👀",
+            "children": {
+              "p5.js": {
+                "href": "https://github.com/processing/p5.js",
+                "description": ""
+              },
+              "three.js": {
+                "href": "https://github.com/mrdoob/three.js/",
+                "description": ""
+              },
+              "Zdog": {
+                "href": "https://github.com/metafizzy/zdog",
+                "description": ""
+              },
+              "PixiJS": {
+                "href": "https://github.com/pixijs/pixi.js",
+                "description": ""
+              },
+              "Rough.js": {
+                "href": "https://github.com/pshihn/rough",
+                "description": ""
+              },
+              "Babylon.js": {
+                "href": "https://github.com/BabylonJS/Babylon.js",
+                "description": "Babylon.js is a powerful, beautiful, simple, and open, game and rendering engine packed into a friendly JavaScript framework."
+              },
+              "dat.gui": {
+                "href": "https://github.com/dataarts/dat.gui",
+                "description": "dat.gui is a lightweight controller library for JavaScript."
+              },
+              "stats.js": {
+                "href": "https://github.com/mrdoob/stats.js",
+                "description": "JavaScript Performance Monitor"
+              }
+            }
+          },
+          "AI": {
+            "icon": "🧠",
+            "children": {
+              "brain.js": {
+                "href": "https://github.com/BrainJS/brain.js",
+                "description": "Neural networks in JavaScript"
+              },
+              "Handtrack.js": {
+                "href": "https://github.com/victordibia/handtrack.js",
+                "description": " A library for prototyping realtime hand detection (bounding box), directly in the browser."
+              },
+              "TensorFlow.js": {
+                "href": "https://github.com/tensorflow/tfjs",
+                "description": "A WebGL accelerated JavaScript library for training and deploying ML models."
+              },
+              "NLP.js": {
+                "href": "https://github.com/axa-group/nlp.js",
+                "description": "An NLP library for building bots, with entity extraction, sentiment analysis, automatic language identify, and more"
+              }
+            }
+          },
+          "Data": {
+            "icon": "🔢",
+            "children": {
+              "skale": {
+                "href": "https://github.com/skale-me/skale",
+                "description": "High performance distributed data processing engine"
+              },
+              "Cytoscape.js": {
+                "href": "https://github.com/cytoscape/cytoscape.js",
+                "description": "Graph theory (network) library for visualisation and analysis"
+              },
+              "sigma.js": {
+                "href": "https://github.com/jacomyal/sigma.js",
+                "description": "A JavaScript library dedicated to graph drawing"
+              },
+              "D3": {
+                "href": "https://d3js.org/",
+                "description": ""
+              },
+              "chart.js": {
+                "href": "https://www.chartjs.org/",
+                "description": ""
+              }
+            }
+          }
+        }
       }
     }
   }
