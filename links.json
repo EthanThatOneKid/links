@@ -95,6 +95,9 @@
               "GoLang": {
                 "href": "https://play.golang.org/"
               },
+              "C": {
+                "href": "https://code.sololearn.com/#c"
+              },
               "RegEx": {
                 "href": "https://regex101.com/"
               }
@@ -257,7 +260,7 @@
         }
       },
       "Environment": {
-        "icon": "",
+        "icon": "🏞",
         "children": {
           "Desktop Apps": {
             "icon": "💻",
