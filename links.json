@@ -204,6 +204,23 @@
               }
             }
           },
+          "Frameworks": {
+            "icon": "🖼",
+            "children": {
+              "Pixel": {
+                "href": "https://github.com/faiface/pixel",
+                "description": "🐐 A hand-crafted 2D game library in Go"
+              },
+              "pygame": {
+                "href": "https://github.com/pygame/pygame",
+                "description": "🐍 pygame (the library) is a Free and Open Source python programming language library for making multimedia applications like games built on top of the excellent SDL library."
+              },
+              "Processing": {
+                "href": "https://processing.org/",
+                "description": "☕ Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts."
+              }
+            }
+          },
           "Engines": {
             "icon": "🚂",
             "children": {
