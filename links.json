@@ -387,6 +387,309 @@
             }
           }
         }
+      },
+      "News": {
+        "icon": "🗞",
+        "children": {
+          "General": {
+            "icon": "🌪",
+            "children": {
+              "Hackernoon": {
+                "href": "https://hackernoon.com/"
+              },
+              "Hacker News": {
+                "href": "https://news.ycombinator.com/"
+              },
+              "Wired": {
+                "href": "https://www.wired.com/"
+              }
+            }
+          },
+          "JavaScript": {
+            "icon": "💛",
+            "children": {
+              "dailyJS": {
+                "href": "https://medium.com/dailyjs"
+              }
+            }
+          },
+          "Python": {
+            "icon": "🐍",
+            "children": {
+              "Planet Python": {
+                "href": "https://planetpython.org/"
+              }
+            }
+          },
+          "GoLang": {
+            "icon": "🐐",
+            "children": {
+              "GN": {
+                "href": "https://golangnews.com/"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Videogames": {
+    "icon": "🕹",
+    "children": {
+      "Mario": {
+        "icon": "🍄",
+        "children": {
+          "Community": {
+            "icon": "👬",
+            "children": {
+              "ROM-Hack Races": {
+                "href": "http://romhackraces.live/"
+              },
+              "SMW Central": {
+                "href": "https://www.smwcentral.net/"
+              },
+              "Annual Super Mario Maker": {
+                "href": "http://mariomaker.phgizmo.com/"
+              }
+            }
+          },
+          "Super Mario Maker": {
+            "icon": "⛑",
+            "children": {
+              "Bookmarks": {
+                "href": "https://supermariomakerbookmark.nintendo.net/?locale=en-US"
+              }
+            }
+          },
+          "Tools": {
+            "icon": "🛠",
+            "children": {
+              "Lunar Magic": {
+                "href": "https://fusoya.eludevisibility.org/lm/"
+              }
+            }
+          }
+        }
+      },
+      "Pokemon": {
+        "icon": "🔴",
+        "children": {
+          "Official": {
+            "icon": "😎",
+            "children": {
+              "Official Website": {
+                "href": "https://www.pokemon.com/us/"
+              }
+            }
+          },
+          "Pokemon Go": {
+            "icon": "🌐",
+            "children": {
+              "The Silph Road": {
+                "href": "https://thesilphroad.com/"
+              },
+              "Silph Arena": {
+                "href": "https://silph.gg/"
+              },
+              "LeekDuck": {
+                "href": "https://leekduck.com/",
+                "description": "🦆"
+              }
+            }
+          },
+          "News": {
+            "icon": "🗞",
+            "children": {
+              "Serebii": {
+                "href": "https://www.serebii.net/"
+              },
+              "Nintendo Life Pokemon": {
+                "href": "http://www.nintendolife.com/pokemon/news"
+              }
+            }
+          },
+          "Info": {
+            "icon": "ℹ",
+            "children": {
+              "Virtual Console Transfer Nature": {
+                "href": "https://gamefaqs.gamespot.com/gbc/198308-pokemon-gold-version/faqs/75211/3ds-virtual-console-transfer-mechanics"
+              }
+            }
+          }
+        }
+      },
+      "Neopets": {
+        "icon": "🦊",
+        "children": {
+          "General": {
+            "Homepage": {
+              "href": "http://www.neopets.com/"
+            },
+            "Gregory's Site": {
+              "href": "http://www.gregorydavidson.com/brown/"
+            }
+          },
+          "Dailies": {
+            "FREE JELLY": "http://www.neopets.com/jelly/jelly.phtml",
+            "FREE OMELETTE": "http://www.neopets.com/prehistoric/omelette.phtml",
+            "COLLECT BANK INTEREST": "http://www.neopets.com/bank.phtml",
+            "SLORG NEOPOINTS": "http://www.neopets.com/shop_of_offers.phtml?slorg_payout=yes",
+            "COUNCIL CHAMBER": "http://www.neopets.com/altador/council.phtml",
+            "OBSIDIAN QUARRY": "http://www.neopets.com/magma/quarry.phtml",
+            "ANCHOR MANAGEMENT": "http://www.neopets.com/pirates/anchormanagement.phtml",
+            "WINTER SCRATCHCARDS": "http://www.neopets.com/winter/kiosk.phtml",
+            "HALLOWEEN SCRATCHCARDS": "http://www.neopets.com/halloween/scratch.phtml",
+            "TIKI TACK TOMBOLA": "http://www.neopets.com/island/tombola.phtml",
+            "MAGICAL BLUE GRUNDO PLUSHIE": "http://www.neopets.com/faerieland/tdmbgpop.phtml",
+            "YE OLDE FISHING VORTEX": "http://www.neopets.com/water/fishing.phtml",
+            "FORGOTTEN SHORE": "http://www.neopets.com/pirates/forgottenshore.phtml",
+            "BURIED TREASURE": "http://www.neopets.com/pirates/buriedtreasure/index.phtml",
+            "FAERIE CAVERNS": "http://www.neopets.com/faerieland/caverns/index.phtml",
+            "THE MYSTERY ISLAND MYSTIC": "http://www.neopets.com/island/mystichut.phtml",
+            "NON-TOOLBAR TREASURES": "http://www.neopets.com/freebies/tarlastoolbar.phtml",
+            "THE COINCIDENCE": "http://www.neopets.com/space/coincidence.phtml",
+            "SHOP WIZARD": "http://www.neopets.com/market.phtml?type=wizard",
+            "FAERIE QUESTS": "http://www.neopets.com/quests.phtml",
+            "NEOBOARDS » QUESTS": "http://www.neopets.com/neoboards/boardlist.phtml?board=9",
+            "THE LABORATORY": "http://www.neopets.com/lab.phtml",
+            "TRUDY'S SURPRISE": "http://www.neopets.com/trudys_surprise.phtml",
+            "GRAVE DANGER": "http://www.neopets.com/halloween/gravedanger/index.phtml",
+            "GUESS THE WEIGHT": "http://www.neopets.com/medieval/guessmarrow.phtml",
+            "KRELUDOR METEOR": "http://www.neopets.com/moon/meteor.phtml",
+            "THE SNOWAGER": "http://www.neopets.com/winter/snowager.phtml",
+            "MYSTERY ISLAND TRAINING": "http://www.neopets.com/island/training.phtml",
+            "SECRET TRAINING": "http://www.neopets.com/island/fight_training.phtml",
+            "BATTLEDOME": "http://www.neopets.com/dome/"
+          }
+        }
+      },
+      "Web Games": {
+        "icon": "🎮",
+        "children": {
+          "Cartoon Network": {
+            "icon": "📺",
+            "children": {
+              "All": {
+                "href": "https://www.cartoonnetwork.com/games/index.html?atclk_gn=un_games_see-all-games"
+              }
+            }
+          },
+          "Pokemon": {
+            "icon": "🔴",
+            "children": {
+              "All": {
+                "href": "https://www.pokemon.com/us/pokemon-online-games/"
+              }
+            }
+          },
+          "Unblocked": {
+            "icon": "🔓",
+            "children": {
+              "Tetris": {
+                "href": "https://www.lumpty.com/amusements/Games/Tetris/tetris.html"
+              }
+            }
+          },
+          "Miscellaneous": {
+            "icon": "🧠",
+            "children": {
+              "cmd.to": {
+                "href": "https://cmd.to/"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "General": {
+    "icon": "🌓",
+    "children": {
+      "Sports": {
+        "icon": "⚾",
+        "children": {
+          "MLB (Major League Baseball)": {
+            "href": "https://www.mlb.com/"
+          },
+          "Angels Baseball": {
+            "href": "https://www.mlb.com/angels"
+          },
+          "ESPN": {
+            "href": "http://www.espn.com/"
+          }
+        }
+      },
+      "Star Trek": {
+        "icon": "🚀",
+        "children": {
+          "Homepage": {
+            "href": "https://www.startrek.com/"
+          }
+        }
+      },
+      "Comics": {
+        "icon": "",
+        "children": {
+          "Go Comics": {
+            "href": "https://www.gocomics.com/"
+          },
+          "Creators Comics": {
+            "href": "https://www.creators.com/categories/comics/all"
+          }
+        }
+      },
+      "Fast Food": {
+        "icon": "",
+        "children": {
+          "Del Taco": {
+            "href": "https://www.deltaco.com/"
+          },
+          "El Pollo Loco": {
+            "href": "https://www.elpolloloco.com/"
+          },
+          "McDonald's": {
+            "href": "https://www.mcdonalds.com/us/en-us.html"
+          },
+          "Wienerschnitzel": {
+            "href": "https://www.wienerschnitzel.com/"
+          }
+        }
+      },
+      "Restaurants": {
+        "icon": "",
+        "children": {
+          "Round Table Pizza": {
+            "href": "https://www.roundtablepizza.com/"
+          },
+          "Pizza Hut": {
+            "href": "https://www.pizzahut.com/"
+          },
+          "Dominos": {
+            "href": "https://www.dominos.com/en/"
+          },
+          "Dominos API": {
+            "href": "https://github.com/gamagori/pizzapi",
+            "description": "A Python wrapper for the Dominos Pizza API"
+          }
+        }
+      },
+      "Miscellaneous": {
+        "icon": "",
+        "children": {
+          "IMDb (Internet Movie Database)": {
+            "href": "https://www.imdb.com/"
+          },
+          "Lugnut": {
+            "href": "https://www.lugnet.com/",
+            "description": "International LEGO Users Group Network, global community of LEGO enthusiasts. LUGNET unites LEGO fans worldwide through forums, web pages, and services."
+          },
+          "Barnes and Noble": {
+            "href": "https://www.barnesandnoble.com/"
+          },
+          "Trend Micro Cybersecurity": {
+            "href": "https://www.trendmicro.com/en_us/business.html"
+          }
+        }
       }
     }
   }
