@@ -137,7 +137,8 @@
             "icon": "🐐",
             "children": {
               "Revel": {
-                "href": "https://revel.github.io"
+                "href": "https://revel.github.io",
+                "description": "A high productivity, full-stack web framework for the Go language."
               },
               "Qlovaseed": {
                 "href": "https://github.com/Qlova/seed",
