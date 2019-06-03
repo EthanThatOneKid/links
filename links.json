@@ -139,6 +139,10 @@
               "Revel": {
                 "href": "https://revel.github.io"
               },
+              "Qlovaseed": {
+                "href": "https://github.com/Qlova/seed",
+                "description": "Qlovaseed is a cross-platform Go framework for building apps."
+              },
               "Native HTTP": {
                 "href": "https://golang.org/doc/articles/wiki/"
               }
@@ -628,7 +632,7 @@
         }
       },
       "Comics": {
-        "icon": "",
+        "icon": "🗯",
         "children": {
           "Go Comics": {
             "href": "https://www.gocomics.com/"
@@ -639,7 +643,7 @@
         }
       },
       "Fast Food": {
-        "icon": "",
+        "icon": "🍟",
         "children": {
           "Del Taco": {
             "href": "https://www.deltaco.com/"
@@ -652,11 +656,17 @@
           },
           "Wienerschnitzel": {
             "href": "https://www.wienerschnitzel.com/"
+          },
+          "Wendy's": {
+            "href": "https://www.wendys.com/"
+          },
+          "Starbucks": {
+            "href": "https://www.starbucks.com/"
           }
         }
       },
       "Restaurants": {
-        "icon": "",
+        "icon": "🍽",
         "children": {
           "Round Table Pizza": {
             "href": "https://www.roundtablepizza.com/"
@@ -670,12 +680,19 @@
           "Dominos API": {
             "href": "https://github.com/gamagori/pizzapi",
             "description": "A Python wrapper for the Dominos Pizza API"
+          },
+          "Buca Di Beppo": {
+            "href": "https://www.bucadibeppo.com/"
           }
         }
       },
       "Miscellaneous": {
-        "icon": "",
+        "icon": "🔮",
         "children": {
+          "Gregory Davidson's Website": {
+            "href": "http://www.gregorydavidson.com/",
+            "description": "My uncle's stunning website."
+          },
           "IMDb (Internet Movie Database)": {
             "href": "https://www.imdb.com/"
           },
@@ -688,6 +705,16 @@
           },
           "Trend Micro Cybersecurity": {
             "href": "https://www.trendmicro.com/en_us/business.html"
+          },
+          "Total Commander": {
+            "href": "https://www.ghisler.com/",
+            "description": "a Shareware file manager for Windows"
+          },
+          "Visual Phenomena & Optical Illusions": {
+            "href": "https://michaelbach.de/ot/"
+          },
+          "Magic Eye": {
+            "href": "http://www.magiceye.com/"
           }
         }
       }
