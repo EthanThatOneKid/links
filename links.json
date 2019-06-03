@@ -624,6 +624,63 @@
       }
     }
   },
+  "SubReddits": {
+    "icon": "👽",
+    "children": {
+      "Programming-Related": {
+        "icon": "💻",
+        "children": {
+          "r/golang": {
+            "href": "https://www.reddit.com/r/golang/",
+            "description": "Gophers of the world unite!"
+          },
+          "r/programming": {
+            "href": "https://www.reddit.com/r/programming/",
+            "description": "Computer Programming"
+          },
+          "r/MachineLearning": {
+            "href": "https://www.reddit.com/r/MachineLearning/"
+          },
+          "r/javascript": {
+            "href": "https://www.reddit.com/r/javascript/",
+            "description": "All about the JavaScript programming language!"
+          },
+          "r/hacking": {
+            "href": "https://www.reddit.com/r/hacking/",
+            "description": "A subreddit dedicated to hacking and hackers."
+          },
+          "r/datasets": {
+            "href": "https://www.reddit.com/r/datasets/",
+            "description": "A place to share, find, and discuss Datasets."
+          },
+          "r/compsci": {
+            "href": "https://www.reddit.com/r/compsci/",
+            "description": "Computer Science Theory and Application. We share and discuss any content that computer scientists find interesting."
+          }
+        }
+      },
+      "Funny": {
+        "icon": "🤣",
+        "children": {
+          "r/fellowprogrammers": {
+            "href": "https://www.reddit.com/r/fellowprogrammers/"
+          },
+          "r/gatekeeping": {
+            "href": "https://www.reddit.com/r/gatekeeping/",
+            "description": "Gatekeeping is when someone takes it upon themselves to decide who does or does not have access or rights to a community or identity."
+          },
+          "r/PewdiepieSubmissions": {
+            "href": "https://www.reddit.com/r/PewdiepieSubmissions/",
+            "description": "This subreddit is for memes that felix can review on LWIAY."
+          },
+          "r/sadcringe": {
+            "href": "https://www.reddit.com/r/sadcringe/",
+            "description": "stuff that makes you cringe in a sad way"
+          }
+        }
+      }
+    }
+  },
   "General": {
     "icon": "🌓",
     "children": {
