@@ -49,6 +49,48 @@
           }
         }
       },
+      "Tutorials": {
+        "icon": "✏",
+        "children": {
+          "Cheatsheets": {
+            "icon": "📄",
+            "children": {
+              "Lua Cheatsheet": {
+                "href": "http://www.newthinktank.com/2015/06/learn-lua-one-video/"
+              },
+              "JavaScript Cheatsheet": {
+                "href": "http://www.newthinktank.com/2011/02/javascript-video-tutorial/"
+              },
+              "GoLang Cheatsheet": {
+                "href": "http://www.newthinktank.com/2015/02/go-programming-tutorial/"
+              },
+              "Java Cheatsheet": {
+                "href": "http://www.newthinktank.com/2014/06/java-programming/"
+              },
+              "MySQL Cheatsheet": {
+                "href": "http://www.newthinktank.com/2014/08/mysql-video-tutorial/"
+              },
+              "Ruby Cheatsheet": {
+                "href": "http://www.newthinktank.com/2015/02/ruby-programming-tutorial/"
+              },
+              "C++ Cheatsheet": {
+                "href": "http://www.newthinktank.com/2014/11/c-programming-tutorial/"
+              },
+              "Python Cheatsheet": {
+                "href": "http://www.newthinktank.com/2014/11/python-programming/"
+              }
+            }
+          },
+          "Miscellaneous": {
+            "icon": "🎁",
+            "children": {
+              "Computer Science Khan Academy": {
+                "href": "https://www.khanacademy.org/computing"
+              }
+            }
+          }
+        }
+      },
       "Playgrounds": {
         "icon": "🎈",
         "children": {
