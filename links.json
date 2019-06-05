@@ -410,6 +410,15 @@
                 "description": ""
               }
             }
+          },
+          "Cli": {
+            "icon": "👨‍💼",
+            "children": {
+              "asciichart": {
+                "href": "https://github.com/kroitor/asciichart",
+                "descripton": "Nice-looking lightweight console ASCII line charts ╭┈╯ for NodeJS and browsers with no dependencies."
+              }
+            }
           }
         }
       },
