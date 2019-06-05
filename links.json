@@ -422,6 +422,24 @@
           }
         }
       },
+      "GoLang Libraries": {
+        "icon": "🐐📚",
+        "children": {
+          "Cli": {
+            "icon": "👨‍💼",
+            "children": {
+              "termui": {
+                "href": "https://github.com/gizak/termui",
+                "description": "termui is a cross-platform and fully-customizable terminal dashboard and widget library built on top of termbox-go. It is inspired by blessed-contrib and tui-rs and written purely in Go."
+              },
+              "asciigraph": {
+                "href": "https://github.com/guptarohit/asciigraph",
+                "description": "Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies."
+              }
+            }
+          }
+        }
+      },
       "News": {
         "icon": "🗞",
         "children": {
