@@ -292,6 +292,9 @@
               },
               "Postman": {
                 "href": "https://www.getpostman.com/"
+              },
+              "Cmder": {
+                "href": "https://cmder.net/"
               }
             }
           },
