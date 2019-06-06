@@ -9,6 +9,6 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
 // Main Process
 (() => {
 
-  console.log(links);
-  
+  const md = MarkdownBuilder.h1("🔗 EthanThatOneKid's Links");
+
 })();
