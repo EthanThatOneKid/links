@@ -482,6 +482,20 @@
           }
         }
       },
+      "Lua Libraries": {
+        "icon": "🍖📚",
+        "children": {
+          "Cli": {
+            "icon": "👨‍💼",
+            "children": {
+              "LTUI": {
+                "href": "https://github.com/tboox/ltui",
+                "description": "LTUI is a cross-platform terminal ui library based on Lua."
+              }
+            }
+          }
+        }
+      },
       "News": {
         "icon": "🗞",
         "children": {
