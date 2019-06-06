@@ -1,0 +1,20 @@
+{
+  "name": "links",
+  "version": "1.0.0",
+  "description": "* [Data Science](programming/data-science)\r * [Playgrounds](programming/playgrounds)\r * [Web Frameworks](programming/web-frameworks)\r * [Game Development](programming/game-development)\r * [Retro](programming/retro)\r * [Environment](programming/environment)\r * [JavaScript Libraries](programming/javascript-libraries)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanThatOneKid/links.git"
+  },
+  "author": "EthanThatOneKid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EthanThatOneKid/links/issues"
+  },
+  "homepage": "https://github.com/EthanThatOneKid/links#readme",
+  "dependencies": {}
+}
