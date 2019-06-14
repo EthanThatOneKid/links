@@ -31,6 +31,7 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
   md.txt("# 🔗 EthanThatOneKid's Links");
 
   // Creating Table of Contents
+  md.txt("## ")
   const toc = links
     .filter(([path, value]) => path[path.length - 1] == "icon")
     .reduce((acc, [path, value]) => {
