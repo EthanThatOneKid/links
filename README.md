@@ -45,6 +45,7 @@
 		* [JavaScript](#-javascript)
 		* [Python](#-python)
 		* [GoLang](#-golang)
+	* [Awesome](#-awesome)
 * [Videogames](#-videogames)
 	* [Mario](#-mario)
 		* [Community](#-community)
@@ -92,7 +93,7 @@
 * [Security Testing](https://github.com/danielmiessler/SecLists)
 * [Text Files](http://textfiles.com/)
 
-### ✏ Tutorials
+### 📝 Tutorials
 
 #### 📄 Cheatsheets
 * [Lua Cheatsheet](http://www.newthinktank.com/2015/06/learn-lua-one-video/)
@@ -259,6 +260,12 @@
 
 #### 🐐 GoLang
 * [GN](https://golangnews.com/)
+
+### 😎 Awesome
+* [Awesome](https://github.com/sindresorhus/awesome)
+* [JavaScript](https://github.com/sorrycc/awesome-javascript)
+* [Python](https://github.com/vinta/awesome-python)
+* [GoLang](https://github.com/avelino/awesome-go)
 
 ## 🕹 Videogames
 
