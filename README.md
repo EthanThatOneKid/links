@@ -67,8 +67,9 @@
 	* [Funny](#-funny)
 * [General](#-general)
 	* [Sports](#-sports)
-	* [Star Trek](#-star-trek)
-	* [Comics](#-comics)
+	* [Entertainment](#-entertainment)
+		* [Star Trek](#-star-trek)
+		* [Comics](#-comics)
 	* [Fast Food](#-fast-food)
 	* [Restaurants](#-restaurants)
 	* [Miscellaneous](#-miscellaneous)
@@ -341,10 +342,12 @@
 * [Angels Baseball](https://www.mlb.com/angels)
 * [ESPN](http://www.espn.com/)
 
-### 🚀 Star Trek
+### 🍿 Entertainment
+
+#### 🚀 Star Trek
 * [Homepage](https://www.startrek.com/)
 
-### 🗯 Comics
+#### 🗯 Comics
 * [Go Comics](https://www.gocomics.com/)
 * [Creators Comics](https://www.creators.com/categories/comics/all)
 
