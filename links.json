@@ -801,22 +801,27 @@
           }
         }
       },
-      "Star Trek": {
-        "icon": "🚀",
+      "Entertainment": {
+        "icon": "🍿",
         "children": {
-          "Homepage": {
-            "href": "https://www.startrek.com/"
-          }
-        }
-      },
-      "Comics": {
-        "icon": "🗯",
-        "children": {
-          "Go Comics": {
-            "href": "https://www.gocomics.com/"
+          "Star Trek": {
+            "icon": "🚀",
+            "children": {
+              "Homepage": {
+                "href": "https://www.startrek.com/"
+              }
+            }
           },
-          "Creators Comics": {
-            "href": "https://www.creators.com/categories/comics/all"
+          "Comics": {
+            "icon": "🗯",
+            "children": {
+              "Go Comics": {
+                "href": "https://www.gocomics.com/"
+              },
+              "Creators Comics": {
+                "href": "https://www.creators.com/categories/comics/all"
+              }
+            }
           }
         }
       },
