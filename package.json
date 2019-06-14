@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/EthanThatOneKid/links#readme",
   "dependencies": {
-    "md-builder": "^1.0.3",
     "recursive-entries": "^1.0.1"
   }
 }

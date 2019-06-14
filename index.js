@@ -1,7 +1,25 @@
 // Dependencies
 const {readFileSync: r, writeFileSync: w} = require('fs');
-const {MarkdownBuilder: MDB} = require('md-builder'); // https://github.com/yulric/md-builder
 const {recursiveEntries, valueFromPath} = require('recursive-entries');
+
+// Helpers
+class MD {
+
+  constructor() {
+    this.stream = [];
+  }
+
+  txt(txt) {
+    this.stream.push(txt);
+  }
+
+  compile() {
+    return this.stream.join("\n");
+  }
+
+}
+
+const getTitle = path => path[path.length - 2];
 
 // Constants
 const links = recursiveEntries(JSON.parse(r('./links.json')));
@@ -9,37 +27,34 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
 // Main Process
 (() => {
 
-  const md = MDB.h1("🔗 EthanThatOneKid's Links");
+  const md = new MD();
+  md.txt("# 🔗 EthanThatOneKid's Links");
 
-  let gimmeList = [];
+  // Creating Table of Contents
+  
+
+  // Creating Document
   for (let [path, value] of links) {
 
-    const depth = ~~(path.length * 0.5 + 1);
     const endpoint = path[path.length - 1];
 
-    if ("icon".includes(endpoint)) {
+    if (endpoint == "icon") {
 
-      if (!!gimmeList.length) {
+      const title = getTitle(path);
+      const depth = path.length * 0.5 + 1;
+      const heading = "#".repeat(depth);
+      md.txt(`\n${heading} ${value} ${title}`);
 
-        md.unorderedList(gimmeList);
-        gimmeList = [];
-
-      }
-
-      const title = path[path.length - 2];
-      md[`h${depth}`](`${value} ${title}`);
-
-    } else if ("href".includes(endpoint)) {
+    } else if (endpoint == "href") {
 
       const linkTo = value;
-      const linkLabel = path[path.length - 2];
-      gimmeList.push(MDB.link({linkTo, linkLabel}));
+      const linkLabel = getTitle(path);
+      md.txt(`* [${linkLabel}](${linkTo})`);
 
     }
 
   }
 
-  const serializedMarkdown = md.toMarkdown();
-  w("./links.md");
+  w("./links.md", md.compile());
 
 })();
