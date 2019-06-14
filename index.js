@@ -1,6 +1,6 @@
 // Dependencies
 const {readFileSync: r} = require('fs');
-const {MarkdownBuilder} = require('md-builder');
+const {MarkdownBuilder} = require('md-builder'); // https://github.com/yulric/md-builder
 const {recursiveEntries, valueFromPath} = require('recursive-entries');
 
 // Constants
