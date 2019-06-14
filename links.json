@@ -50,7 +50,7 @@
         }
       },
       "Tutorials": {
-        "icon": "✏",
+        "icon": "📝",
         "children": {
           "Cheatsheets": {
             "icon": "📄",
@@ -536,6 +536,23 @@
                 "href": "https://golangnews.com/"
               }
             }
+          }
+        }
+      },
+      "Awesome": {
+        "icon": "😎",
+        "children": {
+          "Awesome": {
+            "href": "https://github.com/sindresorhus/awesome"
+          },
+          "JavaScript": {
+            "href": "https://github.com/sorrycc/awesome-javascript"
+          },
+          "Python": {
+            "href": "https://github.com/vinta/awesome-python"
+          },
+          "GoLang": {
+            "href": "https://github.com/avelino/awesome-go"
           }
         }
       }
