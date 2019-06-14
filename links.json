@@ -191,6 +191,23 @@
               }
             }
           },
+          "Scraping": {
+            "icon": "🔪",
+            "children": {
+              "Puppeteer": {
+                "href": "https://github.com/GoogleChrome/puppeteer",
+                "description": "Headless Chrome Node API"
+              },
+              "Cheerio": {
+                "href": "https://github.com/cheeriojs/cheerio",
+                "description": "Fast, flexible & lean implementation of core jQuery designed specifically for the server.",
+              },
+              "Geziyor": {
+                "href": "https://github.com/geziyor/geziyor",
+                "description": "a fast web crawling & scraping framework for Go"
+              }
+            }
+          },
           "Cloud Computing": {
             "icon": "☁",
             "children": {
@@ -712,6 +729,9 @@
             "children": {
               "Tetris": {
                 "href": "https://www.lumpty.com/amusements/Games/Tetris/tetris.html"
+              },
+              "Cloud-Game": {
+                "href": "https://github.com/giongto35/cloud-game"
               }
             }
           },
