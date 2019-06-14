@@ -36,9 +36,8 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
     .filter(([path, value]) => path[path.length - 1] == "icon")
     .reduce((acc, [path, value]) => {
       const linkLabel = path[path.length - 2];
-      const linkTo = `# ${linkLabel}`
-        .replace(/\s/g, "-")
-        .replace(/\W/g, "");
+      const cleanedLabel = linkLabel.replace(/\s/g, "-").replace(/\W/g, "");
+      const linkTo = `#-${cleanedLabel}`;
       const depth = path.length * 0.5 - 1;
       const padding = "\t".repeat(depth);
       const nextLine = `${padding}* [${linkLabel}](${linkTo})\n`;
@@ -69,6 +68,6 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
 
   }
 
-  w("./links.md", md.compile());
+  w("./README.md", md.compile());
 
 })();
