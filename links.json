@@ -878,6 +878,15 @@
             "href": "http://www.magiceye.com/"
           }
         }
+      },
+      "Art": {
+        "icon": "🎨",
+        "children": {
+          "Matthew Rayfield": {
+            "href": "http://matthewrayfield.com/",
+            "description": "Digital visual arts artist."
+          }
+        }
       }
     }
   }
