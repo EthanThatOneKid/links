@@ -763,7 +763,7 @@
             "href":"https://pcgamestorrents.com/"
           },
           "GameStop":{
-            "href":""
+            "href":"https://www.gamestop.com/"
           }
         }
       }
@@ -862,6 +862,18 @@
               },
               "Creators Comics":{
                 "href":"https://www.creators.com/categories/comics/all"
+              },
+              "Phat Collectibles":{
+                "href":"https://www.instagram.com/phatcollectibles"
+              },
+              "Dark Horse":{
+                "href":"https://www.darkhorse.com/"
+              },
+              "KaBoom Studios":{
+                "href":"http://www.boom-studios.com/"
+              },
+              "Image Comics":{
+                "href":"https://imagecomics.com/"
               }
             }
           }
