@@ -331,7 +331,7 @@
 ### 💸 Game Stores
 * [IGG Games](https://igg-games.com/)
 * [PC Games Torrents](https://pcgamestorrents.com/)
-* [GameStop]()
+* [GameStop](https://www.gamestop.com/)
 
 ## 👽 SubReddits
 
@@ -365,6 +365,10 @@
 #### 🗯 Comics
 * [Go Comics](https://www.gocomics.com/)
 * [Creators Comics](https://www.creators.com/categories/comics/all)
+* [Phat Collectibles](https://www.instagram.com/phatcollectibles)
+* [Dark Horse](https://www.darkhorse.com/)
+* [KaBoom Studios](http://www.boom-studios.com/)
+* [Image Comics](https://imagecomics.com/)
 
 ### 🍟 Fast Food
 * [Del Taco](https://www.deltaco.com/)
