@@ -16,6 +16,7 @@
 		* [JavaScript](#-javascript)
 		* [Python](#-python)
 		* [GoLang](#-golang)
+		* [Scraping](#-scraping)
 		* [Cloud Computing](#-cloud-computing)
 		* [Databases](#-databases)
 		* [CSS Libraries](#-css-libraries)
@@ -62,6 +63,7 @@
 		* [Pokemon](#-pokemon)
 		* [Unblocked](#-unblocked)
 		* [Miscellaneous](#-miscellaneous)
+	* [Game Stores](#-game-stores)
 * [SubReddits](#-subreddits)
 	* [Programming-Related](#-programming-related)
 	* [Funny](#-funny)
@@ -145,6 +147,11 @@
 * [Qlovaseed](https://github.com/Qlova/seed)
 * [Native HTTP](https://golang.org/doc/articles/wiki/)
 
+#### 🔪 Scraping
+* [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+* [Cheerio](https://github.com/cheeriojs/cheerio)
+* [Geziyor](https://github.com/geziyor/geziyor)
+
 #### ☁ Cloud Computing
 * [Heroku](https://heroku.com/)
 * [Digital Ocean](https://www.digitalocean.com/)
@@ -196,6 +203,8 @@
 #### 💻 Desktop Apps
 * [GitHub Desktop](https://desktop.github.com/)
 * [Postman](https://www.getpostman.com/)
+* [Total Commander](https://www.ghisler.com/)
+* [μTorrent](https://www.utorrent.com)
 * [Cmder](https://cmder.net/)
 
 #### 👅 Languages
@@ -314,9 +323,15 @@
 
 #### 🔓 Unblocked
 * [Tetris](https://www.lumpty.com/amusements/Games/Tetris/tetris.html)
+* [Cloud-Game](https://github.com/giongto35/cloud-game)
 
 #### 🧠 Miscellaneous
 * [cmd.to](https://cmd.to/)
+
+### 💸 Game Stores
+* [IGG Games](https://igg-games.com/)
+* [PC Games Torrents](https://pcgamestorrents.com/)
+* [GameStop]()
 
 ## 👽 SubReddits
 
