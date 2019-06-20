@@ -73,6 +73,7 @@
 		* [Star Trek](#-star-trek)
 		* [Comics](#-comics)
 	* [Fast Food](#-fast-food)
+	* [Finance](#-finance)
 	* [Restaurants](#-restaurants)
 	* [Miscellaneous](#-miscellaneous)
 	* [Art](#-art)
@@ -110,6 +111,7 @@
 
 #### 🎁 Miscellaneous
 * [Computer Science Khan Academy](https://www.khanacademy.org/computing)
+* [Tech Interview Pro](https://www.techseries.dev/interview)
 
 ### 🎈 Playgrounds
 
@@ -324,6 +326,7 @@
 #### 🔓 Unblocked
 * [Tetris](https://www.lumpty.com/amusements/Games/Tetris/tetris.html)
 * [Cloud-Game](https://github.com/giongto35/cloud-game)
+* [Mario Royale](http://infernoplus.com/royale/)
 
 #### 🧠 Miscellaneous
 * [cmd.to](https://cmd.to/)
@@ -377,6 +380,10 @@
 * [Wienerschnitzel](https://www.wienerschnitzel.com/)
 * [Wendy's](https://www.wendys.com/)
 * [Starbucks](https://www.starbucks.com/)
+
+### 🤑 Finance
+* [Nimses](https://nimses.com/en/)
+* [Minds](https://www.minds.com/)
 
 ### 🍽 Restaurants
 * [Round Table Pizza](https://www.roundtablepizza.com/)
