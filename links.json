@@ -86,6 +86,9 @@
             "children":{
               "Computer Science Khan Academy":{
                 "href":"https://www.khanacademy.org/computing"
+              },
+              "Tech Interview Pro":{
+                "href":"https://www.techseries.dev/interview"
               }
             }
           }
@@ -740,6 +743,9 @@
               },
               "Cloud-Game":{
                 "href":"https://github.com/giongto35/cloud-game"
+              },
+              "Mario Royale":{
+                "href":"http://infernoplus.com/royale/"
               }
             }
           },
@@ -899,6 +905,17 @@
           },
           "Starbucks":{
             "href":"https://www.starbucks.com/"
+          }
+        }
+      },
+      "Finance":{
+        "icon":"🤑",
+        "children":{
+          "Nimses":{
+            "href":"https://nimses.com/en/"
+          },
+          "Minds":{
+            "href":"https://www.minds.com/"
           }
         }
       },
