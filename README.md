@@ -58,6 +58,8 @@
 		* [News](#-news)
 		* [Info](#-info)
 	* [Neopets](#-neopets)
+		* [General](#-general)
+		* [Dailies](#-dailies)
 	* [Web Games](#-web-games)
 		* [Cartoon Network](#-cartoon-network)
 		* [Pokemon](#-pokemon)
@@ -312,8 +314,42 @@
 * [Virtual Console Transfer Nature](https://gamefaqs.gamespot.com/gbc/198308-pokemon-gold-version/faqs/75211/3ds-virtual-console-transfer-mechanics)
 
 ### 🦊 Neopets
+
+#### 🧙‍ General
 * [Homepage](http://www.neopets.com/)
 * [Gregory's Site](http://www.gregorydavidson.com/brown/)
+
+#### 🌞 Dailies
+* [FREE JELLY](http://www.neopets.com/jelly/jelly.phtml)
+* [FREE OMELETTE](http://www.neopets.com/prehistoric/omelette.phtml)
+* [COLLECT BANK INTEREST](http://www.neopets.com/bank.phtml)
+* [SLORG NEOPOINTS](http://www.neopets.com/shop_of_offers.phtml?slorg_payout=yes)
+* [COUNCIL CHAMBER](http://www.neopets.com/altador/council.phtml)
+* [OBSIDIAN QUARRY](http://www.neopets.com/magma/quarry.phtml)
+* [ANCHOR MANAGEMENT](http://www.neopets.com/pirates/anchormanagement.phtml)
+* [WINTER SCRATCHCARDS](http://www.neopets.com/winter/kiosk.phtml)
+* [HALLOWEEN SCRATCHCARDS](http://www.neopets.com/halloween/scratch.phtml)
+* [TIKI TACK TOMBOLA](http://www.neopets.com/island/tombola.phtml)
+* [MAGICAL BLUE GRUNDO PLUSHIE](http://www.neopets.com/faerieland/tdmbgpop.phtml)
+* [YE OLDE FISHING VORTEX](http://www.neopets.com/water/fishing.phtml)
+* [FORGOTTEN SHORE](http://www.neopets.com/pirates/forgottenshore.phtml)
+* [BURIED TREASURE](http://www.neopets.com/pirates/buriedtreasure/index.phtml)
+* [FAERIE CAVERNS](http://www.neopets.com/faerieland/caverns/index.phtml)
+* [THE MYSTERY ISLAND MYSTIC](http://www.neopets.com/island/mystichut.phtml)
+* [NON-TOOLBAR TREASURES](http://www.neopets.com/freebies/tarlastoolbar.phtml)
+* [THE COINCIDENCE](http://www.neopets.com/space/coincidence.phtml)
+* [SHOP WIZARD](http://www.neopets.com/market.phtml?type=wizard)
+* [FAERIE QUESTS](http://www.neopets.com/quests.phtml)
+* [NEOBOARDS » QUESTS](http://www.neopets.com/neoboards/boardlist.phtml?board=9)
+* [THE LABORATORY](http://www.neopets.com/lab.phtml)
+* [TRUDY'S SURPRISE](http://www.neopets.com/trudys_surprise.phtml)
+* [GRAVE DANGER](http://www.neopets.com/halloween/gravedanger/index.phtml)
+* [GUESS THE WEIGHT](http://www.neopets.com/medieval/guessmarrow.phtml)
+* [KRELUDOR METEOR](http://www.neopets.com/moon/meteor.phtml)
+* [THE SNOWAGER](http://www.neopets.com/winter/snowager.phtml)
+* [MYSTERY ISLAND TRAINING](http://www.neopets.com/island/training.phtml)
+* [SECRET TRAINING](http://www.neopets.com/island/fight_training.phtml)
+* [BATTLEDOME](http://www.neopets.com/dome/)
 
 ### 🎮 Web Games
 
