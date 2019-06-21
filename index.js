@@ -47,6 +47,7 @@ const links = recursiveEntries(JSON.parse(r('./links.json')));
   md.txt(toc);
 
   // Creating Document
+  md.txt("\n## ⚡ Links");
   for (let [path, value] of links) {
 
     const endpoint = path[path.length - 1];
