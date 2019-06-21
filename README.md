@@ -81,6 +81,8 @@
 	* [Art](#-art)
 
 
+## ⚡ Links
+
 ## 💻 Programming
 
 ### 🔢 Data Science
