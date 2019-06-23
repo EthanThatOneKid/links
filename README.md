@@ -124,6 +124,7 @@
 * [LeetCode](https://leetcode.com/)
 * [AlgoExpert](https://www.algoexpert.io/product)
 * [CodingBat](https://codingbat.com/python)
+* [Noops](https://noopschallenge.com/)
 
 #### 💛 JavaScript
 * [Khan Academy](https://www.khanacademy.org/computer-programming/new/pjs)
@@ -171,6 +172,7 @@
 * [Bulma](https://bulma.io/)
 * [Material Design Lite](https://github.com/google/material-design-lite)
 * [NES.css](https://github.com/nostalgic-css/NES.css)
+* [Popmotion](https://popmotion.io/)
 
 ### 🎮 Game Development
 
