@@ -173,6 +173,7 @@
 * [Material Design Lite](https://github.com/google/material-design-lite)
 * [NES.css](https://github.com/nostalgic-css/NES.css)
 * [Popmotion](https://popmotion.io/)
+* [Slip](https://github.com/kornelski/slip)
 
 ### 🎮 Game Development
 
