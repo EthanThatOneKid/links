@@ -253,6 +253,9 @@
               },
               "Popmotion":{
                 "href":"https://popmotion.io/"
+              },
+              "Slip":{
+                "href":"https://github.com/kornelski/slip"
               }
             }
           }
