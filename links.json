@@ -134,6 +134,9 @@
           "Miscellaneous":{
             "icon":"🧠",
             "children":{
+              "Glitch":{
+                "href":"https://glitch.com/"
+              },
               "NativeScript":{
                 "href":"https://play.nativescript.org/"
               },
@@ -1044,6 +1047,9 @@
           },
           "Magic Eye":{
             "href":"http://www.magiceye.com/"
+          },
+          "Wallpapers":{
+            "href":"https://droidheat.com/r-wallpapers/"
           }
         }
       },
