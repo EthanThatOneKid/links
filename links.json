@@ -151,7 +151,9 @@
               },
               "RegEx":{
                 "href":"https://regex101.com/"
-              }
+              },
+              "PyRobot":{
+                "href":"https://github.com/facebookresearch/pyrobot"
             }
           }
         }
@@ -197,6 +199,9 @@
               },
               "Native HTTP":{
                 "href":"https://golang.org/doc/articles/wiki/"
+              },
+              "Vecty":{
+                "href":"https://github.com/gopherjs/vecty"
               }
             }
           },
