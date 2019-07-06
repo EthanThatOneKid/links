@@ -48,6 +48,8 @@
 		* [GoLang](#-golang)
 	* [Awesome](#-awesome)
 * [Videogames](#-videogames)
+	* [Retro](#-retro)
+		* [Roms](#-roms)
 	* [Mario](#-mario)
 		* [Community](#-community)
 		* [Super Mario Maker](#-super-mario-maker)
@@ -132,11 +134,13 @@
 * [p5js Editor](https://editor.p5js.org/)
 
 #### 🧠 Miscellaneous
+* [Glitch](https://glitch.com/)
 * [NativeScript](https://play.nativescript.org/)
 * [TypeScript](https://www.typescriptlang.org/play/)
 * [GoLang](https://play.golang.org/)
 * [C](https://code.sololearn.com/#c)
 * [RegEx](https://regex101.com/)
+* [PyRobot](https://github.com/facebookresearch/pyrobot)
 
 ### 🕸 Web Frameworks
 
@@ -153,6 +157,7 @@
 * [Revel](https://revel.github.io)
 * [Qlovaseed](https://github.com/Qlova/seed)
 * [Native HTTP](https://golang.org/doc/articles/wiki/)
+* [Vecty](https://github.com/gopherjs/vecty)
 
 #### 🔪 Scraping
 * [Puppeteer](https://github.com/GoogleChrome/puppeteer)
@@ -287,6 +292,14 @@
 * [GoLang](https://github.com/avelino/awesome-go)
 
 ## 🕹 Videogames
+
+### 🕹 Retro
+
+#### 📼 Roms
+* [ROMSMODE](https://romsmode.com/)
+* [The ROM Depot](https://theromdepot.com/)
+* [The Eye](https://the-eye.eu/public/rom/)
+* [RetrosGames](https://retrosgames.com/)
 
 ### 🍄 Mario
 
@@ -442,6 +455,7 @@
 * [Total Commander](https://www.ghisler.com/)
 * [Visual Phenomena & Optical Illusions](https://michaelbach.de/ot/)
 * [Magic Eye](http://www.magiceye.com/)
+* [Wallpapers](https://droidheat.com/r-wallpapers/)
 
 ### 🎨 Art
 * [Matthew Rayfield](http://matthewrayfield.com/)
