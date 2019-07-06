@@ -606,6 +606,28 @@
     "Videogames":{
       "icon":"🕹",
       "children":{
+        "Retro":{
+          "icon":"🕹",
+          "children":{
+            "Roms":{
+              "icon":"📼",
+              "children":{
+                "ROMSMODE":{
+                  "href":"https://romsmode.com/"
+                },
+                "The ROM Depot":{
+                  "href":"https://theromdepot.com/"
+                },
+                "The Eye":{
+                  "href":"https://the-eye.eu/public/rom/"
+                },
+                "RetrosGames":{
+                  "href":"https://retrosgames.com/"
+                }
+              }
+            }
+          }
+        },
         "Mario":{
           "icon":"🍄",
           "children":{
