@@ -666,6 +666,14 @@
         "Pokemon":{
           "icon":"🔴",
           "children":{
+            "Fan-Made Games":{
+              "icon":"😜",
+              "children":{
+                "PokeMMO":{
+                  "href":"https://pokemmo.eu/"
+                }
+              }
+            },
             "Official":{
               "icon":"😎",
               "children":{
