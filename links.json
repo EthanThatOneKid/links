@@ -37,14 +37,20 @@
             }
           },
           "Miscellaneous Datasets":{
-            "xkcd Colors":{
-              "href":"https://xkcd.com/color/rgb/"
-            },
-            "Security Testing":{
-              "href":"https://github.com/danielmiessler/SecLists"
-            },
-            "Text Files":{
-              "href":"http://textfiles.com/"
+            "icon":"💼",
+            "children":{
+              "xkcd Colors":{
+                "href":"https://xkcd.com/color/rgb/"
+              },
+              "Security Testing":{
+                "href":"https://github.com/danielmiessler/SecLists"
+              },
+              "Text Files":{
+                "href":"http://textfiles.com/"
+              },
+              "Awesome Public Industrial Datasets":{
+                "href":"https://github.com/makinarocks/awesome-industrial-machine-datasets"
+              }
             }
           }
         }
