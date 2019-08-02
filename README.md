@@ -5,6 +5,7 @@
 	* [Data Science](#-data-science)
 		* [NASA (National Aeronautics and Space Administration)](#-nasa-national-aeronautics-and-space-administration)
 		* [GSA (US General Services Administration)](#-gsa-us-general-services-administration)
+		* [Miscellaneous Datasets](#-miscellaneous-datasets)
 	* [Tutorials](#-tutorials)
 		* [Cheatsheets](#-cheatsheets)
 		* [Miscellaneous](#-miscellaneous)
@@ -55,6 +56,7 @@
 		* [Super Mario Maker](#-super-mario-maker)
 		* [Tools](#-tools)
 	* [Pokemon](#-pokemon)
+		* [Fan-Made Games](#-fan-made-games)
 		* [Official](#-official)
 		* [Pokemon Go](#-pokemon-go)
 		* [News](#-news)
@@ -99,9 +101,12 @@
 #### 🌎 GSA (US General Services Administration)
 * [GitHub](https://github.com/GSA/)
 * [Datasets](https://www.data.gov/)
+
+#### 💼 Miscellaneous Datasets
 * [xkcd Colors](https://xkcd.com/color/rgb/)
 * [Security Testing](https://github.com/danielmiessler/SecLists)
 * [Text Files](http://textfiles.com/)
+* [Awesome Public Industrial Datasets](https://github.com/makinarocks/awesome-industrial-machine-datasets)
 
 ### 📝 Tutorials
 
@@ -141,6 +146,7 @@
 * [C](https://code.sololearn.com/#c)
 * [RegEx](https://regex101.com/)
 * [PyRobot](https://github.com/facebookresearch/pyrobot)
+* [Online Syntax Highlighting](https://tohtml.com/jScript/)
 
 ### 🕸 Web Frameworks
 
@@ -315,6 +321,9 @@
 * [Lunar Magic](https://fusoya.eludevisibility.org/lm/)
 
 ### 🔴 Pokemon
+
+#### 😜 Fan-Made Games
+* [PokeMMO](https://pokemmo.eu/)
 
 #### 😎 Official
 * [Official Website](https://www.pokemon.com/us/)
