@@ -971,6 +971,38 @@
             }
           }
         },
+        "Graphic Design":{
+          "icon":"🖋",
+          "children":{
+            "Free Assets":{
+              "icon":"🧧",
+              "children":{
+                "Unsplash":{
+                  "href":"https://unsplash.com/"
+                }
+              }
+            },
+            "Color":{
+              "icon":"🎨",
+              "children":{
+                "color.adobe":{
+                  "href":"https://color.adobe.com/create"
+                }
+              }
+            },
+            "Fonts":{
+              "icon":"",
+              "children":{
+                "fonts.google":{
+                  "href":"https://fonts.google.com/"
+                },
+                "fonts.adobe":{
+                  "href":"https://fonts.adobe.com/"
+                }
+              }
+            }
+          }
+        },
         "Entertainment":{
           "icon":"🍿",
           "children":{
