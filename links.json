@@ -84,6 +84,9 @@
               },
               "Python Cheatsheet":{
                 "href":"http://www.newthinktank.com/2014/11/python-programming/"
+              },
+              "HTML Entities":{
+                "href":"https://dev.w3.org/html5/html-author/charref"
               }
             }
           },
@@ -991,7 +994,7 @@
               }
             },
             "Fonts":{
-              "icon":"",
+              "icon":"&Fscr;",
               "children":{
                 "fonts.google":{
                   "href":"https://fonts.google.com/"
