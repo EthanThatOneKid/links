@@ -75,6 +75,10 @@
 	* [Funny](#-funny)
 * [General](#-general)
 	* [Sports](#-sports)
+	* [Graphic Design](#-graphic-design)
+		* [Free Assets](#-free-assets)
+		* [Color](#-color)
+		* [Fonts](#-fonts)
 	* [Entertainment](#-entertainment)
 		* [Star Trek](#-star-trek)
 		* [Comics](#-comics)
@@ -119,6 +123,7 @@
 * [Ruby Cheatsheet](http://www.newthinktank.com/2015/02/ruby-programming-tutorial/)
 * [C++ Cheatsheet](http://www.newthinktank.com/2014/11/c-programming-tutorial/)
 * [Python Cheatsheet](http://www.newthinktank.com/2014/11/python-programming/)
+* [HTML Entities](https://dev.w3.org/html5/html-author/charref)
 
 #### 🎁 Miscellaneous
 * [Computer Science Khan Academy](https://www.khanacademy.org/computing)
@@ -422,6 +427,18 @@
 * [MLB (Major League Baseball)](https://www.mlb.com/)
 * [Angels Baseball](https://www.mlb.com/angels)
 * [ESPN](http://www.espn.com/)
+
+### 🖋 Graphic Design
+
+#### 🧧 Free Assets
+* [Unsplash](https://unsplash.com/)
+
+#### 🎨 Color
+* [color.adobe](https://color.adobe.com/create)
+
+#### &Fscr; Fonts
+* [fonts.google](https://fonts.google.com/)
+* [fonts.adobe](https://fonts.adobe.com/)
 
 ### 🍿 Entertainment
 
