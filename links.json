@@ -278,6 +278,14 @@
                   "href":"https://github.com/kornelski/slip"
                 }
               }
+            },
+            "CSS Tools":{
+              "icon":"🛠",
+              "children":{
+                "Blobmaker":{
+                  "href":"https://www.blobmaker.app/"
+                }
+              }
             }
           }
         },
