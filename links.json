@@ -990,6 +990,9 @@
               "children":{
                 "Unsplash":{
                   "href":"https://unsplash.com/"
+                },
+                "Sketchfab (3D Models)":{
+                  "href":"https://sketchfab.com/3d-models?features=downloadable&sort_by=-likeCount"
                 }
               }
             },
