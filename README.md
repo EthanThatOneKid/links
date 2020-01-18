@@ -194,6 +194,7 @@
 
 #### 🛠 CSS Tools
 * [Blobmaker](https://www.blobmaker.app/)
+* [CSS Grid Generator](https://cssgrid-generator.netlify.com/)
 
 ### 🎮 Game Development
 
@@ -436,6 +437,8 @@
 
 #### 🧧 Free Assets
 * [Unsplash](https://unsplash.com/)
+* [HTML5up](https://html5up.net/)
+* [Sketchfab (3D Models)](https://sketchfab.com/3d-models?features=downloadable&sort_by=-likeCount)
 
 #### 🎨 Color
 * [color.adobe](https://color.adobe.com/create)
