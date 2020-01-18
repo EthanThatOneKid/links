@@ -284,6 +284,9 @@
               "children":{
                 "Blobmaker":{
                   "href":"https://www.blobmaker.app/"
+                },
+                "CSS Grid Generator":{
+                  "href":"https://cssgrid-generator.netlify.com/"
                 }
               }
             }
@@ -990,6 +993,9 @@
               "children":{
                 "Unsplash":{
                   "href":"https://unsplash.com/"
+                },
+                "HTML5up":{
+                  "href":"https://html5up.net/"
                 },
                 "Sketchfab (3D Models)":{
                   "href":"https://sketchfab.com/3d-models?features=downloadable&sort_by=-likeCount"
