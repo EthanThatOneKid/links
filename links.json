@@ -50,6 +50,13 @@
               },
               "Awesome Public Industrial Datasets":{
                 "href":"https://github.com/makinarocks/awesome-industrial-machine-datasets"
+              },
+              "Journey of Analytics":{
+                "href":"https://blog.journeyofanalytics.com/50-free-datasets-for-data-science-projects/",
+                "description":"50+ free Datasets for Data Science Projects."
+              },
+              "Coronavirus":{
+                "href":"https://www.reddit.com/r/datasets/comments/exnzrd/coronavirus_datasets/"
               }
             }
           }
@@ -184,6 +191,12 @@
                 },
                 "Hybrids":{
                   "href":"https://github.com/hybridsjs/hybrids"
+                },
+                "Vue":{
+                  "href":"https://vuejs.org/"
+                },
+                "Mint":{
+                  "href":"https://www.mint-lang.com/"
                 }
               }
             },
@@ -214,6 +227,10 @@
                 },
                 "Vecty":{
                   "href":"https://github.com/gopherjs/vecty"
+                },
+                "Rose":{
+                  "href":"https://gitlab.com/DevelopmentDuck/rose",
+                  "description":"A website compiler allowing the use of Go alongside HTML."
                 }
               }
             },
@@ -224,6 +241,10 @@
                   "href":"https://github.com/GoogleChrome/puppeteer",
                   "description":"Headless Chrome Node API"
                 },
+                "Playwrite":{
+                  "href":"https://github.com/microsoft/playwright",
+                  "description":"Node library to automate Chromium, Firefox and WebKit with a single API"
+                },
                 "Cheerio":{
                   "href":"https://github.com/cheeriojs/cheerio",
                   "description":"Fast, flexible & lean implementation of core jQuery designed specifically for the server."
@@ -231,6 +252,10 @@
                 "Geziyor":{
                   "href":"https://github.com/geziyor/geziyor",
                   "description":"a fast web crawling & scraping framework for Go"
+                },
+                "ToScrape":{
+                  "href":"http://toscrape.com/",
+                  "description":"Web scraping sandbox"
                 }
               }
             },
@@ -242,6 +267,9 @@
                 },
                 "Digital Ocean":{
                   "href":"https://www.digitalocean.com/"
+                },
+                "Linode":{
+                  "href":"https://promo.linode.com/designcourse/"
                 }
               }
             },
@@ -276,6 +304,9 @@
                 },
                 "Slip":{
                   "href":"https://github.com/kornelski/slip"
+                },
+                "Tailwind":{
+                  "href":"https://tailwindcss.com/"
                 }
               }
             },
@@ -289,6 +320,14 @@
                   "href":"https://cssgrid-generator.netlify.com/"
                 }
               }
+            }
+          }
+        },
+        "Hacking":{
+          "icon":"",
+          "children":{
+            "Pentesting Tools":{
+              "href":"https://prune2000.github.io/tools/pentest/"
             }
           }
         },
@@ -337,6 +376,14 @@
                 },
                 "GB Studio":{
                   "href":"https://github.com/chrismaltby/gb-studio"
+                }
+              }
+            },
+            "Reference":{
+              "icon":"🤓",
+              "children":{
+                "GitHub Game-Off 2019":{
+                  "href":"https://github.blog/2020-01-14-game-off-2019-winners/"
                 }
               }
             }
@@ -529,6 +576,14 @@
                   "descripton":"Nice-looking lightweight console ASCII line charts ╭┈╯ for NodeJS and browsers with no dependencies."
                 }
               }
+            },
+            "Miscellaneous":{
+              "children":{
+                "Workbox":{
+                  "href":"https://developers.google.com/web/tools/workbox",
+                  "description":"Workbox is a set of libraries and Node modules that make it easy to cache assets and take full advantage of features used to build Progressive Web Apps."
+                }
+              }
             }
           }
         },
@@ -547,6 +602,15 @@
                   "description":"Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies."
                 }
               }
+            }
+          }
+        },
+        "Python Libraries":{
+          "icon":"🐍📚",
+          "children":{
+            "PySurvival":{
+              "href":"https://github.com/square/pysurvival/",
+              "description":"Modeling concept used to analyze or predict when an event is likely to happen"
             }
           }
         },
@@ -752,6 +816,9 @@
                 },
                 "Gregory's Site":{
                   "href":"http://www.gregorydavidson.com/brown/"
+                },
+                "Jellyneo":{
+                  "href":"http://www.jellyneo.net/?go=dailies"
                 }
               }
             },
@@ -890,6 +957,9 @@
               "children":{
                 "cmd.to":{
                   "href":"https://cmd.to/"
+                },
+                "js13kgames":{
+                  "href":"http://js13kgames.com/"
                 }
               }
             }
@@ -1000,7 +1070,16 @@
                 "Sketchfab (3D Models)":{
                   "href":"https://sketchfab.com/3d-models?features=downloadable&sort_by=-likeCount"
                 },
-"Ambient Mall Samples":{"href":"https://www.signaturesamples.co.uk/mall/shopping-centre-recordings-royalty-free-and-free-to-download-sample-packs"}
+                "Ambient Mall Samples":{
+                  "href":"https://www.signaturesamples.co.uk/mall/shopping-centre-recordings-royalty-free-and-free-to-download-sample-packs"
+                },
+                "Creative Backgrounds":{
+                  "href":"https://wweb.dev/resources/creative-backgrounds",
+                  "description":"Websites For Creative Backgrounds."
+                },
+                "Streamline Icons":{
+                  "href":"https://streamlineicons.com/free/"
+                }
               }
             },
             "Color":{
