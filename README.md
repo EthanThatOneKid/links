@@ -22,10 +22,12 @@
 		* [Databases](#-databases)
 		* [CSS Libraries](#-css-libraries)
 		* [CSS Tools](#-css-tools)
+	* [Hacking](#-hacking)
 	* [Game Development](#-game-development)
 		* [Assets](#-assets)
 		* [Frameworks](#-frameworks)
 		* [Engines](#-engines)
+		* [Reference](#-reference)
 	* [Retro](#-retro)
 		* [QBasic](#-qbasic)
 		* [Spectrum](#-spectrum)
@@ -41,6 +43,7 @@
 		* [Cli](#-cli)
 	* [GoLang Libraries](#-golang-libraries)
 		* [Cli](#-cli)
+	* [Python Libraries](#-python-libraries)
 	* [Lua Libraries](#-lua-libraries)
 		* [Cli](#-cli)
 	* [News](#-news)
@@ -112,6 +115,8 @@
 * [Security Testing](https://github.com/danielmiessler/SecLists)
 * [Text Files](http://textfiles.com/)
 * [Awesome Public Industrial Datasets](https://github.com/makinarocks/awesome-industrial-machine-datasets)
+* [Journey of Analytics](https://blog.journeyofanalytics.com/50-free-datasets-for-data-science-projects/)
+* [Coronavirus](https://www.reddit.com/r/datasets/comments/exnzrd/coronavirus_datasets/)
 
 ### 📝 Tutorials
 
@@ -160,6 +165,8 @@
 * [React](https://reactjs.org/)
 * [Svelte](https://svelte.dev/)
 * [Hybrids](https://github.com/hybridsjs/hybrids)
+* [Vue](https://vuejs.org/)
+* [Mint](https://www.mint-lang.com/)
 
 #### 🐍 Python
 * [Flask](https://www.fullstackpython.com/flask.html)
@@ -170,15 +177,19 @@
 * [Qlovaseed](https://github.com/Qlova/seed)
 * [Native HTTP](https://golang.org/doc/articles/wiki/)
 * [Vecty](https://github.com/gopherjs/vecty)
+* [Rose](https://gitlab.com/DevelopmentDuck/rose)
 
 #### 🔪 Scraping
 * [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+* [Playwrite](https://github.com/microsoft/playwright)
 * [Cheerio](https://github.com/cheeriojs/cheerio)
 * [Geziyor](https://github.com/geziyor/geziyor)
+* [ToScrape](http://toscrape.com/)
 
 #### ☁ Cloud Computing
 * [Heroku](https://heroku.com/)
 * [Digital Ocean](https://www.digitalocean.com/)
+* [Linode](https://promo.linode.com/designcourse/)
 
 #### 💾 Databases
 * [Firebase](https://firebase.google.com/)
@@ -191,10 +202,14 @@
 * [NES.css](https://github.com/nostalgic-css/NES.css)
 * [Popmotion](https://popmotion.io/)
 * [Slip](https://github.com/kornelski/slip)
+* [Tailwind](https://tailwindcss.com/)
 
 #### 🛠 CSS Tools
 * [Blobmaker](https://www.blobmaker.app/)
 * [CSS Grid Generator](https://cssgrid-generator.netlify.com/)
+
+###  Hacking
+* [Pentesting Tools](https://prune2000.github.io/tools/pentest/)
 
 ### 🎮 Game Development
 
@@ -212,6 +227,9 @@
 * [Unreal](https://www.unrealengine.com/en-US/)
 * [GoDot](https://godotengine.org/)
 * [GB Studio](https://github.com/chrismaltby/gb-studio)
+
+#### 🤓 Reference
+* [GitHub Game-Off 2019](https://github.blog/2020-01-14-game-off-2019-winners/)
 
 ### 🕹 Retro
 
@@ -273,12 +291,16 @@
 
 #### 👨‍💼 Cli
 * [asciichart](https://github.com/kroitor/asciichart)
+* [Workbox](https://developers.google.com/web/tools/workbox)
 
 ### 🐐📚 GoLang Libraries
 
 #### 👨‍💼 Cli
 * [termui](https://github.com/gizak/termui)
 * [asciigraph](https://github.com/guptarohit/asciigraph)
+
+### 🐍📚 Python Libraries
+* [PySurvival](https://github.com/square/pysurvival/)
 
 ### 🍖📚 Lua Libraries
 
@@ -355,6 +377,7 @@
 #### 🧙‍ General
 * [Homepage](http://www.neopets.com/)
 * [Gregory's Site](http://www.gregorydavidson.com/brown/)
+* [Jellyneo](http://www.jellyneo.net/?go=dailies)
 
 #### 🌞 Dailies
 * [FREE JELLY](http://www.neopets.com/jelly/jelly.phtml)
@@ -403,6 +426,7 @@
 
 #### 🧠 Miscellaneous
 * [cmd.to](https://cmd.to/)
+* [js13kgames](http://js13kgames.com/)
 
 ### 💸 Game Stores
 * [IGG Games](https://igg-games.com/)
@@ -439,9 +463,13 @@
 * [Unsplash](https://unsplash.com/)
 * [HTML5up](https://html5up.net/)
 * [Sketchfab (3D Models)](https://sketchfab.com/3d-models?features=downloadable&sort_by=-likeCount)
+* [Ambient Mall Samples](https://www.signaturesamples.co.uk/mall/shopping-centre-recordings-royalty-free-and-free-to-download-sample-packs)
+* [Creative Backgrounds](https://wweb.dev/resources/creative-backgrounds)
+* [Streamline Icons](https://streamlineicons.com/free/)
 
 #### 🎨 Color
 * [color.adobe](https://color.adobe.com/create)
+* [colorsinspo](https://colorsinspo.com/)
 
 #### &Fscr; Fonts
 * [fonts.google](https://fonts.google.com/)
