@@ -340,6 +340,9 @@
                 "Open Game Art":{
                   "href":"https://opengameart.org/"
                 },
+                "Itch.io":{
+                  "href":"https://itch.io/game-assets/free"
+                },
                 "Pogo Assets":{
                   "href":"https://github.com/ZeChrales/PogoAssets"
                 }
