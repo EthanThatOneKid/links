@@ -6,6 +6,7 @@
 
 - [ ] Stores link collection on disk.
 - [ ] Export link collection to Markdown.
+- [ ] Toggle-able private links (can be accessed using password).
 
 ## Developer References 📚
 
