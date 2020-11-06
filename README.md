@@ -20,6 +20,7 @@
 - [React Accessibility](https://reactjs.org/docs/accessibility.html)
 - [Keyboard-navigable JavaScript widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets)
 - ["Skip Navigation" Links](https://webaim.org/techniques/skipnav/)
+- [Keyboard Controls Example](https://svelte.dev/repl/c6ad343f3ec2406aaae05cf8b4a20698?version=3.23.2)
 
 ---
 
