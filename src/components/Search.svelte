@@ -1,100 +1,127 @@
+<!-- Reference:
+- https://www.youtube.com/watch?v=uCIC2LNt0bk&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&index=6
+- https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html#kbd_label
+-->
 <script lang="ts">
-import { onMount, onDestroy, createEventDispatcher } from "svelte";
+import { createEventDispatcher } from "svelte";
+import { keyboard } from "../actions/keyboard";
 
-export let data: string[];
-export let resetOnSelect: boolean;
+export let value: string = "";
+export let data: string[] = [];
 
 const dispatch = createEventDispatcher();
 
-let searchResults: string[] = [];
-let isActive: boolean = false;
 let inputRef: HTMLInputElement;
-let searchResultRefs: HTMLDivElement[] = [];
-let focusedIndex: number = -1;
+let optionRefs: HTMLLIElement[] = [];
+let isExpanded: boolean = false;
+let selectedIndex: number = -1;
+let filteredData: string[] = [];
 
-const updateSearchResults = (searchQuery: string) => {
-  if (searchQuery.length === 0) {
-    searchResults = [];
+$: isExpanded = filteredData.length > 0;
+
+const updateFilteredData = (query: string) => {
+  if (query.length === 0) {
+    filteredData = [];
     return;
   }
   const clean = (someText: string): string =>
     someText.toLowerCase().trim().replace(/\-|\s/g, "_");
-  searchResults = data.filter((item) => {
-    return clean(item).includes(clean(searchQuery));
+  filteredData = data.filter((item) => {
+    return clean(item).includes(clean(query));
   });
 };
 
-const updateFocusedIndex = (index: number = focusedIndex) => {
-  if (index >= searchResults.length) {
-    index = searchResults.length - 1;
+const focusOption = (index: number) => {
+  if (selectedIndex > -1) {
+    optionRefs[selectedIndex].setAttribute("aria-selected", "false");
   }
-  if (index < 0) {
-    focusedIndex = -1;
-    inputRef.focus();
-    return;
-  }
-  focusedIndex = index;
-  if (searchResults[focusedIndex] !== undefined) {
-    setTimeout(() => searchResultRefs[focusedIndex].focus());
-  }
+  optionRefs[index].setAttribute("aria-selected", "true");
+  selectedIndex = index;
 };
 
-const handleSearchQueryChange = () => {
-  setTimeout(() => updateSearchResults(inputRef.value));
+const closeOptions = () => {
+  selectedIndex = -1;
+  filteredData = [];
 };
 
-const handleResultNavigation = (event: KeyboardEvent) => {
-  if (searchResults.length > 0) {
-    const hotKeys = ["ArrowUp", "ArrowDown", "Enter"];
-    const hotKeyIndex = hotKeys.indexOf(event.key);
-    if (hotKeyIndex > -1) {
-      if (event.key === "ArrowUp") {
-        focusedIndex--;
-        updateFocusedIndex();
-      } else if (event.key === "ArrowDown") {
-        focusedIndex++;
-        updateFocusedIndex();
-      } else if (event.key === "Enter") {
-        handleResultSelect(focusedIndex);
-      }
+const textboxHandlers = {
+  ArrowDown() {
+    if (isExpanded) {
+      focusOption(
+        selectedIndex === filteredData.length - 1 || selectedIndex === -1
+          ? 0
+          : selectedIndex + 1
+      );
     }
-  }
+  },
+  ArrowUp() {
+    if (isExpanded) {
+      focusOption(
+        selectedIndex === 0 || selectedIndex === -1
+          ? filteredData.length - 1
+          : selectedIndex - 1
+      );
+    }
+  },
+  Escape() {
+    if (isExpanded) {
+      closeOptions();
+      value = "";
+    }
+  },
+  Enter() {
+    handleOptionSelect(selectedIndex);
+  },
 };
 
-const handleResultSelect = (index: number) => {
-  dispatch("select", searchResults[index]);
-  inputRef.focus();
-  inputRef.value = resetOnSelect ? "" : searchResults[index];
-  searchResults = [];
+const handleQueryChange = (event: KeyboardEvent) => {
+  setTimeout(() => {
+    const { value: query } = event.target as HTMLInputElement;
+    updateFilteredData(query);
+  });
 };
 
-onMount(() => {
-  document.addEventListener("keydown", handleResultNavigation);
-});
-
-onDestroy(() => {
-  document.removeEventListener("keydown", handleResultNavigation);
-});
+const handleOptionSelect = (index: number) => {
+  dispatch("submit", filteredData[index]);
+  closeOptions();
+  value = "";
+};
 </script>
 
-<div class="search_component">
-  <input
-    on:focus="{() => (isActive = true)}"
-    on:keydown="{handleSearchQueryChange}"
-    bind:this="{inputRef}"
-  />
-  <div>
-    {#if isActive}
-      {#each searchResults as item, index}
-        <div
-          class="search_component-result"
-          tabindex="{0}"
-          on:click="{() => handleResultSelect(index)}"
-          bind:this="{searchResultRefs[index]}"
-        >
-          {item}
-        </div>
-      {/each}
-    {/if}
+<div class="combobox-wrapper">
+  <div
+    role="combobox"
+    aria-expanded="{isExpanded}"
+    aria-owns="search_listbox"
+    aria-haspopup="listbox"
+  >
+    <input
+      type="text"
+      aria-autocomplete="list"
+      aria-controls="search_listbox"
+      use:keyboard="{textboxHandlers}"
+      on:keydown="{handleQueryChange}"
+      bind:value
+    />
+    <!-- on:blur="{closeOptions}"
+    /> -->
   </div>
+  <ul id="search_listbox" role="listbox" class="listbox hidden">
+    {#each filteredData as option, index}
+      <li
+        role="option"
+        aria-selected="{selectedIndex === index}"
+        bind:this="{optionRefs[index]}"
+        on:click="{() => handleOptionSelect(index)}"
+      >
+        {option}
+      </li>
+    {/each}
+  </ul>
 </div>
+
+<style>
+li[aria-selected="true"] {
+  border: 1px solid orchid;
+}
+</style>

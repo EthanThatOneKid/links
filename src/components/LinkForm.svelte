@@ -38,11 +38,7 @@ onMount(() => {
 <div>
   <input bind:this="{firstInputRef}" bind:value="{link}" />
   <input bind:value="{title}" />
-  <Search
-    data="{tagOptions}"
-    resetOnSelect="{true}"
-    on:select="{handleAddTag}"
-  />
+  <Search data="{tagOptions}" on:submit="{handleAddTag}" />
   <ul>
     {#each tagValues as tagValue}
       <li
