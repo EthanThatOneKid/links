@@ -1,6 +1,7 @@
 <script lang="ts">
 import { onMount, createEventDispatcher } from "svelte";
 import Search from "./Search.svelte";
+import TagList from "./TagList.svelte";
 
 export let tagOptions: string[] = [];
 
@@ -39,17 +40,7 @@ onMount(() => {
   <input bind:this="{firstInputRef}" bind:value="{link}" />
   <input bind:value="{title}" />
   <Search data="{tagOptions}" on:submit="{handleAddTag}" />
-  <ul>
-    {#each tagValues as tagValue}
-      <li
-        tabindex="{0}"
-        on:click="{() => handleRemoveTag(tagValue)}"
-        on:focus="{() => handleFocusTag(tagValue)}"
-      >
-        {tagValue}
-      </li>
-    {/each}
-  </ul>
+  <TagList bind:value="{tagValues}" />
   <textarea bind:value="{description}"></textarea>
   <button on:click="{handleFormSubmit}">Submit</button>
   <pre>
