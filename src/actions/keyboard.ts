@@ -5,6 +5,7 @@ export const keyboard = (
   map: Record<string, KeyboardHandler>
 ) => {
   const listener = (event: KeyboardEvent) => {
+    console.log(event.key);
     if (map[event.key] !== undefined) {
       map[event.key](event);
     }

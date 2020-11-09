@@ -70,7 +70,13 @@ const textboxHandlers = {
     }
   },
   Enter() {
-    handleOptionSelect(selectedIndex);
+    if (selectedIndex >= 0) {
+      handleOptionSelect(selectedIndex);
+    } else {
+      dispatch("submit", value);
+      closeOptions();
+      value = "";
+    }
   },
 };
 
@@ -102,6 +108,7 @@ const handleOptionSelect = (index: number) => {
       use:keyboard="{textboxHandlers}"
       on:keydown="{handleQueryChange}"
       bind:value
+      name="searchbar"
     />
     <!-- on:blur="{closeOptions}"
     /> -->

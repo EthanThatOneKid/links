@@ -9,26 +9,17 @@ const dispatch = createEventDispatcher();
 
 let link: string = "";
 let title: string = "";
-let tags: Set<string> = new Set([]);
 let tagValues: string[] = [];
 let description: string = "";
 let firstInputRef: HTMLInputElement;
 
-const handleAddTag = (event: CustomEvent) => {
-  const value: string = event.detail;
-  tags.add(value);
-  tagValues = [...tags];
-};
-
-const handleRemoveTag = (tagName: string) => {
-  tags.delete(tagName);
-  tagValues = [...tags];
-};
-
-const handleFocusTag = (tagName: string) => {};
-
 const handleFormSubmit = () => {
   dispatch("submit", { link, title, description, tags: tagValues });
+  link = "";
+  title = "";
+  tagValues = [];
+  description = "";
+  firstInputRef.focus();
 };
 
 onMount(() => {
@@ -37,11 +28,17 @@ onMount(() => {
 </script>
 
 <div>
-  <input bind:this="{firstInputRef}" bind:value="{link}" />
-  <input bind:value="{title}" />
-  <Search data="{tagOptions}" on:submit="{handleAddTag}" />
-  <TagList bind:value="{tagValues}" />
-  <textarea bind:value="{description}"></textarea>
+  <label for="link">Link:</label>
+  <input name="link" bind:this="{firstInputRef}" bind:value="{link}" />
+
+  <label for="title">Title:</label>
+  <input name="title" bind:value="{title}" />
+
+  <TagList data="{tagOptions}" bind:value="{tagValues}" />
+
+  <label for="description">Description:</label>
+  <textarea name="description" bind:value="{description}"></textarea>
+
   <button on:click="{handleFormSubmit}">Submit</button>
   <pre>
     <code
