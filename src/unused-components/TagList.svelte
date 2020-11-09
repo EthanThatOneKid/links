@@ -2,7 +2,7 @@
 - https://www.w3.org/TR/2017/WD-wai-aria-practices-1.1-20170628/examples/radio/radio-1/radio-1.html#kbd_label
 -->
 <script lang="ts">
-import Search from "./Search.svelte";
+import TagSearch from "./TagSearch.svelte";
 import { keyboard } from "../actions/keyboard";
 
 export let data: string[] = [];
@@ -91,7 +91,7 @@ const handleSearchSubmit = (event: CustomEvent) => {
 
 <div>
   <label for="searchbar">Add Tag(s):</label>
-  <Search data="{data}" on:submit="{handleSearchSubmit}" />
+  <TagSearch data="{data}" on:submit="{handleSearchSubmit}" />
   <div
     role="radiogroup"
     tabindex="{0}"

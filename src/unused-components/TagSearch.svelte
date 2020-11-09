@@ -11,7 +11,7 @@ export let data: string[] = [];
 
 const dispatch = createEventDispatcher();
 
-let inputRef: HTMLInputElement;
+// let inputRef: HTMLInputElement;
 let optionRefs: HTMLLIElement[] = [];
 let isExpanded: boolean = false;
 let selectedIndex: number = -1;

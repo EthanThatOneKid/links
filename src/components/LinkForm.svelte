@@ -1,7 +1,6 @@
 <script lang="ts">
 import { onMount, createEventDispatcher } from "svelte";
-import Search from "./Search.svelte";
-import TagList from "./TagList.svelte";
+import Tags from "svelte-tags-input"; // https://github.com/agustinl/svelte-tags-input
 
 export let tagOptions: string[] = [];
 
@@ -22,6 +21,10 @@ const handleFormSubmit = () => {
   firstInputRef.focus();
 };
 
+const handleTagChange = (event: CustomEvent) => {
+  tagValues = [...event.detail.tags];
+};
+
 onMount(() => {
   firstInputRef.focus();
 });
@@ -34,7 +37,21 @@ onMount(() => {
   <label for="title">Title:</label>
   <input name="title" bind:value="{title}" />
 
-  <TagList data="{tagOptions}" bind:value="{tagValues}" />
+  <Tags
+    on:tags="{handleTagChange}"
+    addKeys="{[9, 13, 32]}"
+    maxTags="{100}"
+    allowPaste="{true}"
+    allowDrop="{true}"
+    splitWith="{','}"
+    onlyUnique="{true}"
+    removeKeys="{[8, 27]}"
+    placeholder="{'tags...'}"
+    autoComplete="{tagOptions}"
+    allowBlur="{true}"
+    disable="{false}"
+    minChars="{1}"
+  />
 
   <label for="description">Description:</label>
   <textarea name="description" bind:value="{description}"></textarea>
