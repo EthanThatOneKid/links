@@ -20,24 +20,28 @@ export interface CollectionEntry {
   title: string;
   description: string;
   tags: string[];
+  ts: number;
 }
 
 export interface CollectionData {
   links: CollectionEntry[];
-  tags: Record<string, number>; // <TagValue, CorrespondingLinkIndex>
+  tags: Record<string, number[]>; // <TagValue, CorrespondingLinkIndex>
 }
 
-export const loadCollectionData = async (): Promise<CollectionData | null> => {
-  let data: CollectionData | null;
-  const handle = await loadFileHandle();
-  if (handle !== null) {
-    const file = await handle.getFile();
-    const body = await file.text();
+export const COLLECTION_EXTENTION = "cltn";
+
+export const loadCollectionData = async (
+  handle: FileSystemFileHandle
+): Promise<CollectionData | null> => {
+  let data: CollectionData | null = null;
+  const file: File = await handle.getFile();
+  const extention = file.name.split(".").pop();
+  console.log({ extention });
+  if (extention === COLLECTION_EXTENTION) {
+    const body: string = await file.text();
     try {
       data = JSON.parse(body);
-    } catch {
-      data = null;
-    }
+    } catch {}
   }
   return data;
 };

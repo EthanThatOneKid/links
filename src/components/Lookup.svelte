@@ -1,23 +1,20 @@
 <script lang="ts">
 import TagListInput from "./TagListInput.svelte";
-import { loadCollectionData } from "../shared/fs";
-import type { CollectionData, CollectionEntry } from "../shared/fs";
+import { links } from "../stores/links";
+import { tags } from "../stores/tags";
 
-export let tagOptions: string[] = [];
-
-let tagValues: string[] = [];
-let collectionData: CollectionData;
-
-const loadCollectionFile = async () => {
-  collectionData = await loadCollectionData();
-};
+let searchFilters: string[] = [];
 
 const handleTagChange = (event: CustomEvent) => {
-  tagValues = [...event.detail.tags];
+  searchFilters = [...event.detail.tags];
 };
 </script>
 
 <div>
-  <button on:click="{loadCollectionFile}">Load Collection File</button>
-  <TagListInput on:change="{handleTagChange}" options="{tagOptions}" />
+  {#if $tags !== null}
+    <TagListInput
+      on:change="{handleTagChange}"
+      options="{Object.keys($tags)}"
+    />
+  {:else}First, load a collection (<code>.cltn</code>) file.{/if}
 </div>

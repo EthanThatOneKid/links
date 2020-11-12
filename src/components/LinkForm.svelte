@@ -1,8 +1,7 @@
 <script lang="ts">
 import { onMount, createEventDispatcher } from "svelte";
 import TagListInput from "./TagListInput.svelte";
-
-export let tagOptions: string[] = [];
+import { tags } from "../stores/tags";
 
 const dispatch = createEventDispatcher();
 
@@ -37,7 +36,8 @@ onMount(() => {
   <label for="title">Title:</label>
   <input name="title" bind:value="{title}" />
 
-  <TagListInput on:change="{handleTagChange}" options="{tagOptions}" />
+  <label for="tags">Tags:</label>
+  <TagListInput on:change="{handleTagChange}" options="{Object.keys($tags)}" />
 
   <label for="description">Description:</label>
   <textarea name="description" bind:value="{description}"></textarea>
@@ -50,3 +50,15 @@ onMount(() => {
     </code>
   </pre>
 </div>
+
+<style lang="scss">
+div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+</style>
