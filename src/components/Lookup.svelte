@@ -1,9 +1,9 @@
 <script lang="ts">
-import marked from "marked";
+// import marked from "marked";
 import TagListInput from "./TagListInput.svelte";
 import {
   searchCollectionData,
-  exportCollectionDataAsMarkdown,
+  // exportCollectionDataAsMarkdown,
 } from "../shared/utils";
 import { links } from "../stores/links";
 import { tags } from "../stores/tags";
@@ -29,7 +29,6 @@ const handleTagChange = async (event: CustomEvent) => {
   );
   $isLoading = false;
   console.timeEnd("SEARCH_COLLECTION");
-  console.log({ $handle });
 };
 </script>
 
@@ -42,8 +41,8 @@ const handleTagChange = async (event: CustomEvent) => {
     />
   {:else}First, load a collection (<code>.cltn</code>) file.{/if}
   <pre><code>{JSON.stringify(searchResults, null, 2)}</code></pre>
-  {@html marked(exportCollectionDataAsMarkdown('test.cltn', {
+  <!-- {@html marked(exportCollectionDataAsMarkdown($handle.name, {
       tags: $tags,
       links: $links,
-    }))}
+    }))} -->
 </div>
