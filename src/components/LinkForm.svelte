@@ -1,7 +1,11 @@
 <script lang="ts">
 import { onMount, createEventDispatcher } from "svelte";
 import TagListInput from "./TagListInput.svelte";
+import { saveCollectionData } from "../shared/fs";
 import { tags } from "../stores/tags";
+import { links } from "../stores/links";
+import { isLoading } from "../stores/isLoading";
+import { handle } from "../stores/handle";
 
 const dispatch = createEventDispatcher();
 
@@ -11,17 +15,38 @@ let tagValues: string[] = [];
 let description: string = "";
 let firstInputRef: HTMLInputElement;
 
-const handleFormSubmit = () => {
-  dispatch("submit", { link, title, description, tags: tagValues });
+const handleFormSubmit = async () => {
+  $isLoading = true;
+  $links = $links.concat([
+    {
+      link,
+      title,
+      description,
+      tags: tagValues,
+      ts: Date.now(),
+    },
+  ]);
+  const linkIndex = $links.length - 1;
+  $tags = tagValues.reduce((map, tag) => {
+    if (map[tag] === undefined) {
+      map[tag] = [linkIndex];
+    } else {
+      map[tag].push(linkIndex);
+    }
+    return map;
+  }, $tags);
+  const contents = JSON.stringify({ tags: $tags, links: $links });
+  await saveCollectionData($handle, contents);
   link = "";
   title = "";
   tagValues = [];
   description = "";
+  $isLoading = false;
   firstInputRef.focus();
 };
 
 const handleTagChange = (event: CustomEvent) => {
-  tagValues = [...event.detail.tags];
+  tagValues = [...event.detail];
 };
 
 onMount(() => {

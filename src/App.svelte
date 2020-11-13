@@ -3,13 +3,13 @@ import Header from "./components/Header.svelte";
 import Lookup from "./components/Lookup.svelte";
 import LinkForm from "./components/LinkForm.svelte";
 import { keyboard } from "./actions/keyboard";
-
-let lookupMode: boolean = false;
+import { isInLookupMode } from "./stores/isInLookupMode";
+import { handle } from "./stores/handle";
 
 const globalHandlers = {
   q({ ctrlKey }: KeyboardEvent) {
     if (ctrlKey) {
-      lookupMode = !lookupMode;
+      $isInLookupMode = !$isInLookupMode;
     }
   },
 };
@@ -19,11 +19,12 @@ const globalHandlers = {
 
 <main>
   <Header />
-
-  {#if lookupMode}
+  {#if $isInLookupMode}
     <Lookup />
-  {:else}
+  {:else if $handle !== null}
     <LinkForm />
+  {:else}
+    <p>Load/create a collection file...</p>
   {/if}
 </main>
 

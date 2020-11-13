@@ -6,7 +6,7 @@ import { tags } from "../stores/tags";
 let searchFilters: string[] = [];
 
 const handleTagChange = (event: CustomEvent) => {
-  searchFilters = [...event.detail.tags];
+  searchFilters = [...event.detail];
 };
 </script>
 
@@ -17,4 +17,6 @@ const handleTagChange = (event: CustomEvent) => {
       options="{Object.keys($tags)}"
     />
   {:else}First, load a collection (<code>.cltn</code>) file.{/if}
+  <pre><code
+    >{JSON.stringify({ tags: $tags, links: $links }, null, 2)}</code></pre>
 </div>
