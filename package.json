@@ -24,6 +24,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
+    "marked": "^1.2.3",
     "sirv-cli": "^1.0.0",
     "svelte-tags-input": "^2.6.5"
   }

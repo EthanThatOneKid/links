@@ -16,32 +16,44 @@ let description: string = "";
 let firstInputRef: HTMLInputElement;
 
 const handleFormSubmit = async () => {
-  $isLoading = true;
-  $links = $links.concat([
-    {
-      link,
-      title,
-      description,
-      tags: tagValues,
-      ts: Date.now(),
-    },
-  ]);
-  const linkIndex = $links.length - 1;
-  $tags = tagValues.reduce((map, tag) => {
-    if (map[tag] === undefined) {
-      map[tag] = [linkIndex];
-    } else {
-      map[tag].push(linkIndex);
+  const doesLinkExist = $links.some(({ link }) => {
+    try {
+      return new URL(link).toString() === new URL(title).toString();
+    } catch {
+      return false;
     }
-    return map;
-  }, $tags);
-  const contents = JSON.stringify({ tags: $tags, links: $links });
-  await saveCollectionData($handle, contents);
+  });
+  if (!doesLinkExist) {
+    // TODO: If link exists, just edit original one
+    $isLoading = true;
+    $links = $links.concat([
+      {
+        link,
+        title,
+        description,
+        tags: tagValues,
+        ts: Date.now(),
+      },
+    ]);
+    const linkIndex = $links.length - 1;
+    $tags = tagValues.reduce((map, tag) => {
+      if (map[tag] === undefined) {
+        map[tag] = [linkIndex];
+      } else {
+        map[tag].push(linkIndex);
+      }
+      return map;
+    }, $tags);
+    const contents = JSON.stringify({ tags: $tags, links: $links });
+    await saveCollectionData($handle, contents);
+    $isLoading = false;
+  } else {
+    console.log("LINK_ALREADY_EXISTS");
+  }
   link = "";
   title = "";
   tagValues = [];
   description = "";
-  $isLoading = false;
   firstInputRef.focus();
 };
 

@@ -1,43 +1,33 @@
 <script lang="ts">
-import {
-  loadFileHandle,
-  createFileHandle,
-  loadCollectionData,
-  saveCollectionData,
-} from "../shared/fs";
 import { handle } from "../stores/handle";
-import { links } from "../stores/links";
-import { tags } from "../stores/tags";
-import { isLoading } from "../stores/isLoading";
-import { isInLookupMode } from "../stores/isInLookupMode";
-
-const loadCollectionFile = async () => {
-  $isLoading = true;
-  $handle = await loadFileHandle();
-  if ($handle !== null) {
-    const collection = await loadCollectionData($handle);
-    $links = collection.links;
-    $tags = collection.tags;
-  }
-  $isLoading = false;
-};
-
-const createCollectionFile = async () => {
-  $isLoading = true;
-  $handle = await createFileHandle();
-  if ($handle !== null) {
-    $links = [];
-    $tags = {};
-  }
-  $isLoading = false;
-};
+import {
+  loadCollectionFile,
+  createCollectionFile,
+  toggleLookupMode,
+} from "../shared/utils";
 </script>
 
 <header>
-  <button on:click="{() => ($isInLookupMode = !$isInLookupMode)}">🔁</button>
-  <kbd>Ctrl Q</kbd>
+  <span>
+    <button on:click="{toggleLookupMode}">🔁</button>
+    <kbd>Ctrl Q</kbd>
+  </span>
+
   {#if $handle === null}
-    <button on:click="{loadCollectionFile}">Load Collection File</button>
-    <button on:click="{createCollectionFile}">Create Collection File</button>
+    <span>
+      <button on:click="{loadCollectionFile}">Load Collection File</button>
+      <kbd>Ctrl Y</kbd>
+    </span>
+    <span>
+      <button on:click="{createCollectionFile}">Create Collection File</button>
+      <kbd>Ctrl M</kbd>
+    </span>
   {/if}
 </header>
+
+<style lang="scss">
+header {
+  display: flex;
+  flex-direction: column;
+}
+</style>

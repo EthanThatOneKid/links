@@ -5,11 +5,26 @@ import LinkForm from "./components/LinkForm.svelte";
 import { keyboard } from "./actions/keyboard";
 import { isInLookupMode } from "./stores/isInLookupMode";
 import { handle } from "./stores/handle";
+import {
+  loadCollectionFile,
+  createCollectionFile,
+  toggleLookupMode,
+} from "./shared/utils";
 
 const globalHandlers = {
   q({ ctrlKey }: KeyboardEvent) {
     if (ctrlKey) {
-      $isInLookupMode = !$isInLookupMode;
+      toggleLookupMode();
+    }
+  },
+  y({ ctrlKey }: KeyboardEvent) {
+    if (ctrlKey) {
+      loadCollectionFile();
+    }
+  },
+  m({ ctrlKey }: KeyboardEvent) {
+    if (ctrlKey) {
+      createCollectionFile();
     }
   },
 };
