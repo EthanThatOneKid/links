@@ -74,7 +74,12 @@ onMount(() => {
   <input name="title" bind:value="{title}" />
 
   <label for="tags">Tags:</label>
-  <TagListInput on:change="{handleTagChange}" options="{Object.keys($tags)}" />
+  <div class="taglistinput-container">
+    <TagListInput
+      on:change="{handleTagChange}"
+      options="{Object.keys($tags)}"
+    />
+  </div>
 
   <label for="description">Description:</label>
   <textarea name="description" bind:value="{description}"></textarea>
@@ -96,6 +101,11 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+
+  .taglistinput-container {
+    display: block;
+    width: min-content;
+    height: min-content;
+  }
 }
 </style>
