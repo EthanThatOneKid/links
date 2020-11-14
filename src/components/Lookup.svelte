@@ -39,6 +39,7 @@ const handleTagChange = async (event: CustomEvent) => {
       on:change="{handleTagChange}"
       options="{Object.keys($tags)}"
     />
+    <!-- Todo: Automatically select first item in component list. -->
   {:else}First, load a collection (<code>.cltn</code>) file.{/if}
   <pre><code>{JSON.stringify(searchResults, null, 2)}</code></pre>
   <!-- {@html marked(exportCollectionDataAsMarkdown($handle.name, {

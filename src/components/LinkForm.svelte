@@ -16,11 +16,11 @@ let description: string = "";
 let firstInputRef: HTMLInputElement;
 
 const handleFormSubmit = async () => {
-  const doesLinkExist = $links.some(({ link }) => {
+  const doesLinkExist = $links.some((entry) => {
     try {
-      return new URL(link).toString() === new URL(title).toString();
+      return new URL(link).toString() === new URL(entry.link).toString();
     } catch {
-      return false;
+      return link === entry.link;
     }
   });
   if (!doesLinkExist) {
