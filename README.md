@@ -6,7 +6,8 @@
 
 - [ ] Stores link collection on disk.
 - [ ] Export link collection to Markdown.
-- [ ] Toggle-able private links (can be accessed using password).
+- [ ] Toggle-able private links (can be accessed using password and are encrypted in the save file).
+- [ ] Save data is human-readable/editable for easy modifications.
 
 ## Developer References 📚
 
