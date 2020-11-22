@@ -4,6 +4,7 @@ import Tags from "svelte-tags-input"; // https://github.com/agustinl/svelte-tags
 
 export let options: string[] = [];
 export let willMakeFocus: boolean = false;
+export let initialTags: string[] = [];
 
 const dispatch = createEventDispatcher();
 let tagsRef: Tags;
@@ -16,13 +17,18 @@ const handleTagChange = (event: CustomEvent) => {
 };
 
 onMount(() => {
-  if (willMakeFocus) {
-    setTimeout(() => {
-      const inputRefId = tagsRef.$capture_state().id;
+  setTimeout(() => {
+    const inputState = tagsRef.$capture_state();
+    for (let initialTag of initialTags) {
+      inputState.addTag(initialTag);
+    }
+    console.log({ inputState });
+    if (willMakeFocus) {
+      const inputRefId = inputState.id;
       const inputRef = document.getElementById(inputRefId);
       inputRef.focus();
-    });
-  }
+    }
+  });
 });
 </script>
 
