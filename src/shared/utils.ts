@@ -13,6 +13,46 @@ export interface SearchSettings {
   isSortedByRecency: boolean;
 }
 
+export const editTagsOfCollectionEntry = (
+  collectionEntryIndex: number,
+  updatedTagList: string[]
+): Promise<boolean> => {
+  return new Promise<boolean>((resolve) => {
+    setTimeout(() => {
+      let deletedTags = [],
+        addedTags = [];
+      links.subscribe((collectionEntries) => {
+        const { tags: originalTags } = collectionEntries[collectionEntryIndex];
+        const uniqueTags = getOneTimeOccurences<string>([
+          ...originalTags,
+          ...updatedTagList,
+        ]);
+        addedTags = uniqueTags.filter((tag) => updatedTagList.includes(tag));
+        deletedTags = uniqueTags.filter((tag) => originalTags.includes(tag));
+      });
+      tags.update((tagList) => {
+        for (let deletedTag of deletedTags) {
+          if (tagList[deletedTag].length === 1) {
+            delete tagList[deletedTag];
+          } else {
+            const tagIdIndex = tagList[deletedTag].indexOf(
+              collectionEntryIndex
+            );
+            if (tagIdIndex > -1) {
+              tagList[deletedTag].splice(tagIdIndex, 1);
+            }
+          }
+        }
+        for (let addedTag of addedTags) {
+          // create a new tag key and arr with curr index as only item.
+          // or update existing
+        }
+        return tagList;
+      });
+    });
+  });
+};
+
 export const searchCollectionData = (
   { links, tags }: CollectionData,
   settings: SearchSettings = {
@@ -27,26 +67,22 @@ export const searchCollectionData = (
   }
   return new Promise<CollectionEntry[]>((resolve) => {
     setTimeout(() => {
-      const filteredEntryIndices: Set<number> = settings.filters.reduce(
-        (indices: Set<number>, filter: string) => {
-          if (tags[filter] !== undefined) {
-            for (const index of tags[filter]) {
-              indices.add(index);
-            }
-          }
-          if (!settings.isSearchingByTagsOnly) {
-            for (let i = 0; i < links.length; i++) {
-              const { title, description } = links[i];
-              if (title.includes(filter) || description.includes(filter)) {
-                indices.add(i);
-              }
-            }
-          }
-          return indices;
-        },
-        new Set([])
-      );
-      const filteredEntries: CollectionEntry[] = [...filteredEntryIndices]
+      const filteredEntryIndices: number[] = [];
+      for (let i = 0; i < links.length; i++) {
+        const currentLink = links[i];
+        const isComposedOfDesiredTags = settings.filters
+          .filter((filter) => filter in tags)
+          .every((tagId) => currentLink.tags.includes(tagId));
+        const isMatchingTitleOrDescription = settings.filters.some(
+          (searchQuery) =>
+            currentLink.title.includes(searchQuery) ||
+            currentLink.description.includes(searchQuery)
+        );
+        if (isMatchingTitleOrDescription || isComposedOfDesiredTags) {
+          filteredEntryIndices.push(i);
+        }
+      }
+      const filteredEntries: CollectionEntry[] = filteredEntryIndices
         .map((index) => links[index])
         .sort((a, b) => {
           if (settings.isSortedAlphabetically) {
@@ -70,6 +106,22 @@ export const loadCollectionFile = async () => {
   }
   isLoading.set(false);
 };
+
+export function getOneTimeOccurences<T>(list: T[]): T[] {
+  const repeats = new Set<T>([]);
+  const seenOnceBefore = new Set<T>([]);
+  for (let item of list) {
+    if (!repeats.has(item)) {
+      if (seenOnceBefore.has(item)) {
+        seenOnceBefore.delete(item);
+        repeats.add(item);
+      } else {
+        seenOnceBefore.add(item);
+      }
+    }
+  }
+  return [...seenOnceBefore];
+}
 
 export const createCollectionFile = async () => {
   isLoading.set(true);
