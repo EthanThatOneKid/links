@@ -13,44 +13,82 @@ export interface SearchSettings {
   isSortedByRecency: boolean;
 }
 
-export const editTagsOfCollectionEntry = (
-  collectionEntryIndex: number,
-  updatedTagList: string[]
+export const editCollectionEntry = (
+  updatedEntry: CollectionEntry,
+  entryIndex: number
 ): Promise<boolean> => {
   return new Promise<boolean>((resolve) => {
     setTimeout(() => {
-      let deletedTags = [],
-        addedTags = [];
-      links.subscribe((collectionEntries) => {
-        const { tags: originalTags } = collectionEntries[collectionEntryIndex];
-        const uniqueTags = getOneTimeOccurences<string>([
-          ...originalTags,
-          ...updatedTagList,
-        ]);
-        addedTags = uniqueTags.filter((tag) => updatedTagList.includes(tag));
-        deletedTags = uniqueTags.filter((tag) => originalTags.includes(tag));
+      let deletedTags: string[] = [],
+        addedTags: string[] = [];
+      links.update((collectionEntries) => {
+        collectionEntries[entryIndex].title = updatedEntry.title;
+        collectionEntries[entryIndex].description = updatedEntry.description;
+        collectionEntries[entryIndex].link = updatedEntry.link;
+        collectionEntries[entryIndex].ts = Date.now();
+        if (
+          !checkArraysAreIdentical(
+            updatedEntry.tags,
+            collectionEntries[entryIndex].tags
+          )
+        ) {
+          const uniqueTags = getOneTimeOccurences<string>([
+            ...collectionEntries[entryIndex].tags,
+            ...updatedEntry.tags,
+          ]);
+          addedTags = uniqueTags.filter((tag) =>
+            updatedEntry.tags.includes(tag)
+          );
+          deletedTags = uniqueTags.filter((tag) =>
+            collectionEntries[entryIndex].tags.includes(tag)
+          );
+          collectionEntries[entryIndex].tags = [...updatedEntry.tags];
+        }
+        return collectionEntries;
       });
-      tags.update((tagList) => {
+      tags.update((tagStore) => {
         for (let deletedTag of deletedTags) {
-          if (tagList[deletedTag].length === 1) {
-            delete tagList[deletedTag];
-          } else {
-            const tagIdIndex = tagList[deletedTag].indexOf(
-              collectionEntryIndex
-            );
-            if (tagIdIndex > -1) {
-              tagList[deletedTag].splice(tagIdIndex, 1);
-            }
-          }
+          tagStore = deleteTagFromEntity(tagStore, deletedTag, entryIndex);
         }
         for (let addedTag of addedTags) {
-          // create a new tag key and arr with curr index as only item.
-          // or update existing
+          tagStore = addTagToEntity(tagStore, addedTag, entryIndex);
         }
-        return tagList;
+        return tagStore;
       });
+      resolve(true);
     });
   });
+};
+
+const deleteTagFromEntity = (
+  tagStore: Record<string, number[]>,
+  targetTag: string,
+  targetEntryIndex: number
+): Record<string, number[]> => {
+  if (tagStore[targetTag] === undefined) {
+    return tagStore;
+  } else if (tagStore[targetTag].length === 1) {
+    delete tagStore[targetTag];
+  } else {
+    const tagIdIndex = tagStore[targetTag].indexOf(targetEntryIndex);
+    if (tagIdIndex > -1) {
+      tagStore[targetTag].splice(tagIdIndex, 1);
+    }
+  }
+  return tagStore;
+};
+
+const addTagToEntity = (
+  tagStore: Record<string, number[]>,
+  targetTag: string,
+  targetEntryIndex: number
+): Record<string, number[]> => {
+  if (tagStore[targetTag] === undefined) {
+    tagStore[targetTag] = [targetEntryIndex];
+  } else {
+    tagStore[targetTag].push(targetEntryIndex);
+  }
+  return tagStore;
 };
 
 export const searchCollectionData = (
@@ -188,3 +226,21 @@ export const chooseLoveIcon = () => {
   const randomIndex = Math.floor(selection.length * Math.random());
   return selection[randomIndex];
 };
+
+export function checkArraysAreIdentical<T>(
+  array1: T[],
+  array2: T[],
+  ...arrays: T[][]
+): boolean {
+  if (array1.length !== array2.length) {
+    return false;
+  }
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+  }
+  return arrays.length > 0
+    ? checkArraysAreIdentical(array2, arrays.shift(), ...arrays)
+    : true;
+}

@@ -24,18 +24,19 @@ const handleFormSubmit = async () => {
     }
   });
   if (!doesLinkExist) {
-    // TODO: If link exists, just edit original one
+    // TODO:
+    // * If link exists, just edit original one
+    // * Abstract adding a new link to a util function.
     $isLoading = true;
-    $links = $links.concat([
-      {
-        link,
-        title,
-        description,
-        tags: tagValues,
-        ts: Date.now(),
-      },
-    ]);
-    const linkIndex = $links.length - 1;
+    const firstNullIndex = $links.indexOf(null);
+    const linkIndex = firstNullIndex > -1 ? firstNullIndex : $links.length - 1;
+    $links[linkIndex] = {
+      link,
+      title,
+      description,
+      tags: tagValues,
+      ts: Date.now(),
+    };
     $tags = tagValues.reduce((map, tag) => {
       if (map[tag] === undefined) {
         map[tag] = [linkIndex];

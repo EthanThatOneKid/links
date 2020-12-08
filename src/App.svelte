@@ -1,6 +1,7 @@
 <script lang="ts">
 import Header from "./components/Header.svelte";
-import Lookup from "./components/Lookup.svelte";
+// import Lookup from "./components/Lookup.svelte";
+import Pagination from "./components/Pagination.svelte";
 import LinkForm from "./components/LinkForm.svelte";
 import { keyboard } from "./actions/keyboard";
 import { isInLookupMode } from "./stores/isInLookupMode";
@@ -35,7 +36,7 @@ const globalHandlers = {
 <main>
   <Header />
   {#if $isInLookupMode}
-    <Lookup />
+    <Pagination />
   {:else if $handle !== null}
     <LinkForm />
   {:else}
