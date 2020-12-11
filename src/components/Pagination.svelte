@@ -10,6 +10,10 @@ import type { CollectionEntry } from "../shared/fs";
 
 export let pageSize: number = 10;
 
+// TODO
+// - currentlySelected is broken
+// - saving edited data to disk is broken
+
 $: linksOnPage = $links.slice(
   pageSize * $currentPageNumber,
   pageSize * $currentPageNumber + pageSize
