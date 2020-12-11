@@ -46,6 +46,7 @@ export const editCollectionEntry = (
         }
         return collectionEntries;
       });
+      console.log({ deletedTags, addedTags });
       tags.update((tagStore) => {
         for (let deletedTag of deletedTags) {
           tagStore = deleteTagFromEntity(tagStore, deletedTag, entryIndex);
@@ -55,7 +56,10 @@ export const editCollectionEntry = (
         }
         return tagStore;
       });
-      resolve(true);
+
+      return saveCollectionFile()
+        .then((isSaved) => resolve(isSaved))
+        .catch(() => resolve(false));
     });
   });
 };
@@ -143,6 +147,26 @@ export const loadCollectionFile = async () => {
     tags.set(collection.tags);
   }
   isLoading.set(false);
+};
+
+export const saveCollectionFile = async (): Promise<boolean> => {
+  isLoading.set(true);
+  handle.subscribe((fileHandle) => {
+    if (fileHandle !== null) {
+      const saveData: CollectionData = { links: [], tags: {} };
+      links.subscribe((linksData) => (saveData.links = linksData));
+      tags.subscribe((tagsData) => (saveData.tags = tagsData));
+      const writable = fileHandle.createWritable();
+      writable.write(JSON.stringify(saveData));
+      writable.close();
+      const linksAmount = saveData.links.length;
+      console.log(`Saved ${linksAmount} links to disk!`);
+      isLoading.set(false);
+      return true;
+    }
+  });
+  isLoading.set(false);
+  return false;
 };
 
 export function getOneTimeOccurences<T>(list: T[]): T[] {

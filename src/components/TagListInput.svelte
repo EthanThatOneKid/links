@@ -22,7 +22,6 @@ onMount(() => {
     for (let initialTag of initialTags) {
       inputState.addTag(initialTag);
     }
-    console.log({ inputState });
     if (willMakeFocus) {
       const inputRefId = inputState.id;
       const inputRef = document.getElementById(inputRefId);
@@ -42,7 +41,7 @@ onMount(() => {
   splitWith="{','}"
   onlyUnique="{true}"
   removeKeys="{[8, 27]}"
-  placeholder="{'tags...'}"
+  placeholder="tags..."
   autoComplete="{options}"
   allowBlur="{true}"
   disable="{false}"
