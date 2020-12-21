@@ -25,8 +25,9 @@ const handleFormSubmit = async () => {
   });
   if (!doesLinkExist) {
     // TODO:
-    // * If link exists, just edit original one
-    // * Abstract adding a new link to a util function.
+    // - If link exists, just edit original one.
+    // - Abstract adding a new link to a util function.
+    // - Reset tag input on successful submission.
     $isLoading = true;
     const firstNullIndex = $links.indexOf(null);
     const linkIndex = firstNullIndex > -1 ? firstNullIndex : $links.length - 1;
