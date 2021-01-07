@@ -8,6 +8,7 @@
 - [ ] Export link collection to Markdown.
 - [ ] Toggle-able private links (can be accessed using password and are encrypted in the save file).
 - [ ] Save data is human-readable/editable for easy modifications.
+- [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)).
 
 ## Developer References 📚
 
