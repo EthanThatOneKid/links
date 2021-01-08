@@ -2,6 +2,12 @@
 
 > An app for link collectors
 
+## Development 👨‍💻
+
+This project is powered by [Svelte][svelte] and utilizes [cutting-edge][web_dev] browser APIs.
+
+To get started, clone this repository, run `npm i` to install the dependencies, and then run `npm run dev` to spin up the [development server][localhost].
+
 ## Features 💅
 
 - [ ] Stores link collection on disk.
@@ -10,7 +16,7 @@
 - [ ] Save data is human-readable/editable for easy modifications.
 - [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)).
 
-## Developer References 📚
+## Reference 📚
 
 ### File System API
 
@@ -26,4 +32,9 @@
 
 ---
 
-Engineered with 💖 by [EthanThatOneKid](http://ethandavidson.com/)
+Engineered with 💖 by [EthanThatOneKid][creator_url]
+
+[creator_url]: http://ethandavidson.com/
+[svelte]: https://svelte.dev/
+[web_dev]: https://developers.google.com/web/updates/2020/10/nic86
+[localhost]: http://localhost:5000
