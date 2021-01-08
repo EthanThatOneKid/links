@@ -1,4 +1,5 @@
 <script lang="ts">
+import chakra from "@chakra-ui/system";
 import { handle } from "../stores/handle";
 import {
   loadCollectionFile,
