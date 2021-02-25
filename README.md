@@ -11,10 +11,9 @@ To get started, clone this repository, run `npm i` to install the dependencies, 
 ## Features 💅
 
 - [ ] Stores link collection on disk.
-- [ ] Export link collection to Markdown.
+- [ ] Export link collection to Markdown. The save data is human-readable/editable for easy modifications.
 - [ ] Toggle-able private links (can be accessed using password and are encrypted in the save file).
-- [ ] Save data is human-readable/editable for easy modifications.
-- [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)).
+- [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)) and can be encrypted with a password.
 
 ## Reference 📚
 

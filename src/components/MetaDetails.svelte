@@ -1,5 +1,5 @@
 <script lang="ts">
-import { getSvgUriFromUrl, fallbackSvg } from "../shared/meta";
+import { getSvgUriFromUrl, fallbackSvg } from "../lib/meta";
 
 export let url: string;
 let icon: HTMLImageElement;

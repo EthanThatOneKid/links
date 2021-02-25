@@ -1,7 +1,7 @@
 <script lang="ts">
 import { onMount, createEventDispatcher } from "svelte";
 import TagListInput from "./TagListInput.svelte";
-import { saveCollectionData } from "../shared/fs";
+import { saveCollectionData } from "../lib/fs";
 import { tags } from "../stores/tags";
 import { links } from "../stores/links";
 import { isLoading } from "../stores/isLoading";

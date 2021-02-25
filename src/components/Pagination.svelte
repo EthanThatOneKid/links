@@ -4,9 +4,9 @@ import { currentPageNumber } from "../stores/currentPageNumber";
 import { links } from "../stores/links";
 // import { tags } from "../stores/tags";
 import { currentlySelected } from "../stores/currentlySelected";
-import { editCollectionEntry } from "../shared/utils";
+import { editCollectionEntry } from "../lib/utils";
 import LinkEntry from "./LinkEntry.svelte";
-import type { CollectionEntry } from "../shared/fs";
+import type { CollectionEntry } from "../lib/fs";
 
 export let pageSize: number = 10;
 

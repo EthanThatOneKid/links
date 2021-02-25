@@ -1,6 +1,6 @@
 <script lang="ts">
 import { createEventDispatcher } from "svelte";
-import type { CollectionEntry } from "../shared/fs";
+import type { CollectionEntry } from "../lib/fs";
 import { tags } from "../stores/tags";
 import TagListInput from "../components/TagListInput.svelte";
 import MetaDetails from "./MetaDetails.svelte";

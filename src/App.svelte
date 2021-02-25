@@ -10,7 +10,7 @@ import {
   loadCollectionFile,
   createCollectionFile,
   toggleLookupMode,
-} from "./shared/utils";
+} from "./lib/utils";
 
 const globalHandlers = {
   q({ ctrlKey }: KeyboardEvent) {
