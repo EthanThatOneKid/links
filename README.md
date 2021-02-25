@@ -13,7 +13,7 @@ To get started, clone this repository, run `npm i` to install the dependencies, 
 - [ ] Stores link collection on disk.
 - [ ] Export link collection to Markdown. The save data is human-readable/editable for easy modifications.
 - [ ] Toggle-able private links (can be accessed using password and are encrypted in the save file).
-- [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)) and can be encrypted with a password.
+- [ ] Save data as an image (like [PICO-8](https://pico-8.fandom.com/wiki/P8PNGFileFormat)) and can be [encrypted](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt#syntax) with a password.
 
 ## Reference 📚
 
