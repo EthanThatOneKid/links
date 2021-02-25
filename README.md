@@ -21,6 +21,7 @@ To get started, clone this repository, run `npm i` to install the dependencies, 
 
 - [File System Access Article](https://web.dev/file-system-access/)
 - [File System Access Full Example](https://github.com/GoogleChromeLabs/text-editor)
+- [Data URI Specification](https://tools.ietf.org/html/rfc2397)
 
 ### Accessibility
 
