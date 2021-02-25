@@ -4,11 +4,11 @@ import TagListInput from "./TagListInput.svelte";
 import {
   searchCollectionData,
   // exportCollectionDataAsMarkdown,
-} from "../shared/utils";
+} from "../lib/utils";
 import { links } from "../stores/links";
 import { tags } from "../stores/tags";
 import { isLoading } from "../stores/isLoading";
-import type { CollectionEntry } from "../shared/fs";
+import type { CollectionEntry } from "../lib/fs";
 
 let searchFilters: string[] = [];
 let searchResults: CollectionEntry[] = [];
@@ -46,7 +46,8 @@ const handleTagChange = async (event: CustomEvent) => {
         <h2><a href="{link}">{title}</a></h2>
         <p>Last Updated: {new Date(ts)}</p>
         <p>{description}</p>
-        <span>Tags:
+        <span
+          >Tags:
           <ul>
             {#each tags as tag}
               <li>{tag}</li>
