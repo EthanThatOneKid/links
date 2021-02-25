@@ -1,7 +1,11 @@
 # Architecture
 
+## Features
+
 This project is a [PWA (Progressive Web Application)][pwa] utility for storing, categorizing, and looking up links to other websites.
 Each link to a website is stored locally as a collection with the [IndexDB Web API][idb] (with help from [Dexie.js][storage_lib] [💡][dexie.js_example]).
+Various file formats (PNG, GIF, JSON) will be acceptable for a lively drag-n-drop user experience.
+The web application will work with all of these offline and as an installed PWA.
 
 ## [`manifest.json`](manifest.json)
 
